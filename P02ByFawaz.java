@@ -7,7 +7,7 @@ import java.lang.String;
  * @author Fawaz Alturbaq
 
  */ 
-public class GEDFileReader {
+public class P02ByFawaz {
   //Defining The known Tags
     private static String[] knownTags= {"INDI","NAME","SEX","BIRT","DEAT","FAMC","FAMS","FAM"
                 ,"MARR","HUSB","WIFE","CHIL","DIV","DATE","HEAD","TRLR","NOTE"};
