@@ -306,7 +306,7 @@ enum  Tag{
 	String famc;
 
 
-	public IndividualRecord(int id, String name, String sex, String birthDate, List fams, String famc)
+	public IndividualRecord(int id, String name, String sex, String birthDate, List<String> fams, String famc)
 	{ 
 		this.id=id;
 		this.name=name;
@@ -331,7 +331,7 @@ enum  Tag{
 	String marriageDate,divorceDate;
 	List <String> childerenList;
 	
-	public FamilyRecord (int familyId, int husbandId, int wifeId,List childerenList, String marriageDate, String divorceDate)
+	public FamilyRecord (int familyId, int husbandId, int wifeId,List<String> childerenList, String marriageDate, String divorceDate)
 	{
 		this.familyId=familyId;
 		this.husbandId=husbandId;
