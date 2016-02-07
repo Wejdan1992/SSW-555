@@ -179,6 +179,8 @@ enum  Tag{
 		constructIndiRecords();
 		constructFamRecords();
 		
+		buffer.close();
+		
 	}
 	 private void constructIndiRecords ()
 	{
@@ -232,7 +234,7 @@ enum  Tag{
 
 				}
 			}
-            this.indiRecords.add(new IndividualRecord(id,name,sex,birthDate,fams,famc));
+            this.indiRecords.add(new IndividualRecord(id,name,sex,birthDate,deathDate,fams,famc));
 			this.indiRecordsNumber++;
 		}
 	}   
@@ -306,12 +308,13 @@ enum  Tag{
 	String famc;
 
 
-	public IndividualRecord(int id, String name, String sex, String birthDate, List<String> fams, String famc)
+	public IndividualRecord(int id, String name, String sex, String birthDate, String deathDate, List<String> fams, String famc)
 	{ 
 		this.id=id;
 		this.name=name;
 		this.sex=sex;
 		this.birthDate=birthDate;
+		this.deathDate=deathDate;
 		this.fams =fams;
 		this.famc=famc;
 
