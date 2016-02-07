@@ -1,3 +1,4 @@
+0 Wejdan1992/SSW-555 NOTE
 0 HEAD
 1 SOUR Family Echo
 2 WWW http://www.familyecho.com/
@@ -11,7 +12,7 @@
 2 NAME Fawaz
 1 SUBN
 1 CHAR UTF-8
-0 @I1@ INDI
+0 @I3@ INDI
 1 NAME Alex /Smith/
 2 GIVN Alex
 2 SURN Smith
@@ -20,7 +21,7 @@
 1 BIRT
 2 DATE 5 FEB 1986
 1 FAMC @F1@
-0 @I2@ INDI
+0 @I1@ INDI
 1 NAME Jhon /Smith/
 2 GIVN Jhon
 2 SURN Smith
@@ -31,7 +32,7 @@
 1 FAMS @F1@
 1 FAMS @F2@
 1 FAMC @F3@
-0 @I3@ INDI
+0 @I2@ INDI
 1 NAME Jessica /Palmer/
 2 GIVN Jessica
 2 SURN Palmer
@@ -40,7 +41,7 @@
 1 BIRT
 2 DATE 7 OCT 1966
 1 FAMS @F2@
-0 @I4@ INDI
+0 @I5@ INDI
 1 NAME Sara /Lyman/
 2 GIVN Sara
 2 SURN Lyman
@@ -49,7 +50,7 @@
 1 BIRT
 2 DATE 8 JUN 1964
 1 FAMS @F1@
-0 @I5@ INDI
+0 @I6@ INDI
 1 NAME Ethan /Smith/
 2 GIVN Ethan
 2 SURN Smith
@@ -60,7 +61,7 @@
 1 DEAT Y
 2 DATE 9 JUL 1972
 1 FAMS @F3@
-0 @I6@ INDI
+0 @I4@ INDI
 1 NAME Ruby /Williams/
 2 GIVN Ruby
 2 SURN Williams
@@ -126,7 +127,7 @@
 1 DIV
 2 DATE 12 MAR 1990
 1 _CURRENT N
-0 @F2@ FAM
+0 @F5@ FAM
 1 HUSB @I2@
 1 WIFE @I3@
 1 CHIL @I11@
@@ -134,7 +135,7 @@
 2 DATE 5 MAY 1992
 2 PLAC Los Angeles
 1 _CURRENT Y
-0 @F3@ FAM
+0 @F4@ FAM
 1 HUSB @I5@
 1 WIFE @I6@
 1 CHIL @I2@
@@ -144,7 +145,7 @@
 1 EVEN
 2 TYPE Ending
 1 _CURRENT N
-0 @F4@ FAM
+0 @F3@ FAM
 1 HUSB @I7@
 1 WIFE @I6@
 1 CHIL @I8@
@@ -152,7 +153,7 @@
 2 DATE 12 MAR 1975
 2 PLAC Boston
 1 _CURRENT Y
-0 @F5@ FAM
+0 @F2@ FAM
 1 HUSB @I9@
 1 WIFE @I8@
 1 CHIL @I10@
