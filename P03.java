@@ -2,7 +2,14 @@
 import java.io.*;
 import java.util.*;
 
+/*Helper classes are
+1. Line - To store all the info line by line
+2. Record - To store all the records. It consists of Line objects
+3. Individual Record - To store all the data about indivdials using the Record class
+4. Family Record -To store all the data about Families using the Record class
+*/
 
+//Known Tags
 enum  Tag{
  	INDI,
 	NAME,
@@ -24,6 +31,7 @@ enum  Tag{
 	INVALIDTAG,
 }
 
+// This class will take a line and parse it into 1.level 2.value 3. tag
  class Line
 {
 	private String value;
@@ -125,6 +133,8 @@ enum  Tag{
     return false;
 }
 }
+
+//This class for structuring the data and store the lines into records
  class Record
 {
 	public Tag type;
@@ -137,7 +147,10 @@ enum  Tag{
 
 }
 
-
+//This's the main class which will handle the ged files. Its functions are:
+//1. construct the records using the Line objects
+//2. construct the individual records using Record objects
+//3. construct the families records using Record objects
   class  GedFileHandler
 {
 	 List<Record> records = new ArrayList<Record>();
@@ -147,10 +160,22 @@ enum  Tag{
 	 int indiRecordsNumber = 0;
 	 int famRecordsNumber = 0 ;
 	 String gedFileName;
+
 	 public GedFileHandler(String gedFileName)
 	 {
 	 	this.gedFileName = gedFileName;
 	 }
+	 public  IndividualRecord getIndiById(int id)
+	{
+		for(IndividualRecord temp: indiRecords)
+		{
+			if(temp.id == id)
+			{
+				return temp;
+			}
+		}
+		return null;
+	}
 
 		public  void constructRecords() throws IOException
 	{
@@ -294,6 +319,7 @@ enum  Tag{
 	}
 
 
+
 }
 
  class IndividualRecord 
@@ -319,7 +345,9 @@ enum  Tag{
 		this.famc=famc;
 
 	}
+	
 }
+//To sort the list of individual records based on their ids
  class IndiRecordsComparator implements Comparator<IndividualRecord>
 {
 	@Override
@@ -344,6 +372,7 @@ enum  Tag{
 		this.divorceDate = divorceDate;
 	}
 }
+//To sort the list of families records based on their ids
 class FamRecordsComparator implements Comparator<FamilyRecord>
 {
 	@Override
@@ -379,7 +408,9 @@ public class P03
        		System.out.println("Families in the File:");
        		for(FamilyRecord temp : handler.famRecords)
        		{
-       			System.out.println("Family ID:"+temp.familyId+ " | Husband ID:"+temp.husbandId+ " | Wife ID:" +temp.wifeId);
+       			System.out.println("Family ID:"+temp.familyId+ 
+       				"| Husband ID:"+temp.husbandId+" Name:"+handler.getIndiById(temp.husbandId).name+
+       				"| Wife ID:" +temp.wifeId+" Name:"+handler.getIndiById(temp.wifeId).name);
        		}
        	}
 
