@@ -385,7 +385,7 @@ class FamRecordsComparator implements Comparator<FamilyRecord>
 public class P03  
 {
 	
-
+private static IndividualRecord[] indiRecords;
   
   
 	public static void main(String[] args) throws IOException 
@@ -412,10 +412,24 @@ public class P03
        				"| Husband ID:"+temp.husbandId+" Name:"+handler.getIndiById(temp.husbandId).name+
        				"| Wife ID:" +temp.wifeId+" Name:"+handler.getIndiById(temp.wifeId).name);
        		}
+       	
+       		listSingle();
        	}
+  
 
 
-
+    public static void listSingle()
+     {
+        System.out.println("--------------Single in the family are:-------------");
+         for ( int i=0;i<indiRecords.length && indiRecords[i]!=null; i++)
+            {
+              if (indiRecords[i].fams==null)
+                  {
+                  System.out.println(indiRecords[i].id+" "+indiRecords[i].name);
+                    }
+                    }
+      }
+      
 
      }
  
