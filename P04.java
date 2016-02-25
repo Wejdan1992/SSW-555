@@ -382,7 +382,7 @@ class FamRecordsComparator implements Comparator<FamilyRecord>
 	}
 }
 	
-public class P03  
+public class P04  
 {
 	
   
@@ -412,15 +412,65 @@ public class P03
        				"| Wife ID:" +temp.wifeId+" Name:"+handler.getIndiById(temp.wifeId).name);
        		}
        	
-       	
+       	    listSingle(handler);
+           CheckAgeLimit(handler);
        	}
+       	
+       	// to list single
+       	public static void listSingle(GedFileHandler handler)
+     {
+        System.out.println("--------------Single in the family are:-------------");
+        
+        for(IndividualRecord temp : handler.indiRecords)
+        {
+            
+            if(temp.fams.size()==0)
+            System.out.println("ID:"+temp.id+ "   "+temp.name);
   
+        }
 
+    }
 
-
+     //  to chick the people who are more than 150 years old
+    public static void CheckAgeLimit(GedFileHandler handler)
+    {
+        
+        int i;
+        System.out.println("--------------Check Age Limit for Individual Here:-------------");
+        for(IndividualRecord temp : handler.indiRecords)
+        {
+        
+          String s= temp.birthDate;
+          String[] tokens = s.split(" ");
       
+          int test=0;
+          for (String t : tokens){
+            
+            if(test==2){
+                int year = Integer.parseInt(t);
+                int age = 2016 - year;
+                System.out.println("DOB is " + temp.birthDate);
+                 System.out.println("Name :"+temp.name+ "   Age "+ age);
+                 if(age >150){
+                    System.out.println("this idividual age is more than 150 ");
+                 }
+                
+            }
+            test++;
+          } // for loop ends here
+  
+        }
+          
+        
+    
+        
+    } // function CheckAgeLimit ends here 
+    
+    
+    
 
      }
+  
  
  
     	    
