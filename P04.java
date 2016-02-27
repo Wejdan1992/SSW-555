@@ -416,7 +416,7 @@ public class P04
            CheckAgeLimit(handler);
        	}
        	
-       	// to list single
+       	// to list living single
        	public static void listSingle(GedFileHandler handler)
      {
         System.out.println("--------------Single in the family are:-------------");
@@ -424,7 +424,7 @@ public class P04
         for(IndividualRecord temp : handler.indiRecords)
         {
             
-            if(temp.fams.size()==0)
+            if(temp.fams.size()==0 && temp.deathDate== null)
             System.out.println("ID:"+temp.id+ "   "+temp.name);
   
         }
