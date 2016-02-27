@@ -18,7 +18,6 @@ Family ID:3| Husband ID:5 Name:Ethan /Smith/| Wife ID:6 Name:Ruby /Williams/
 Family ID:4| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
 Family ID:5| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
 --------------Single in the family are:-------------
-ID:1   Alex /Smith/
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
 --------------Check Age Limit for Individual Here:-------------
