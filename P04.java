@@ -434,8 +434,7 @@ public class P04
      //  to chick the people who are more than 150 years old
     public static void CheckAgeLimit(GedFileHandler handler)
     {
-        
-        int i;
+     
         System.out.println("--------------Check Age Limit for Individual Here:-------------");
         for(IndividualRecord temp : handler.indiRecords)
         {
