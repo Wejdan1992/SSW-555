@@ -16,8 +16,8 @@ enum  Tag{
 	SEX,
 	BIRT,
 	DEAT,
-	FAMC,
 	FAMS,
+	FAMC,
 	FAM,
 	MARR,
 	HUSB,
@@ -223,7 +223,7 @@ enum  Tag{
 			List<String> fams = new ArrayList<String>();
 			for (int j=0; j< thisRecord.lines.size();j++)
 			{
-                            if(thisRecord.lines.get(j).getTag()!=null)
+             if(thisRecord.lines.get(j).getTag()!=null)
 				switch(thisRecord.lines.get(j).getTag())
 				{
 					case INDI:
@@ -246,12 +246,12 @@ enum  Tag{
 					deathDate = thisRecord.lines.get(j+1).getValue();
 					break;
 
+					case FAMS:
+					fams.add(thisRecord.lines.get(j).getValue());	
+					break;
+					
 					case FAMC:
 					famc = thisRecord.lines.get(j).getValue();
-					break;
-
-					case FAMS:
-					fams.add(thisRecord.lines.get(j).getValue());
 					break;
 
 					default:
@@ -279,7 +279,7 @@ enum  Tag{
 			List <String> childerenList = new ArrayList<String>();
 			for (int j=0; j< thisRecord.lines.size();j++)
 			{
-                             if(thisRecord.lines.get(j).getTag()!=null)
+				if(thisRecord.lines.get(j).getTag()!=null)
 				switch(thisRecord.lines.get(j).getTag())
 				{
 					case FAM:
@@ -341,7 +341,7 @@ enum  Tag{
 		this.sex=sex;
 		this.birthDate=birthDate;
 		this.deathDate=deathDate;
-		this.fams =fams;
+		this.fams=fams;
 		this.famc=famc;
 
 	}
@@ -413,25 +413,22 @@ public class P04
        		}
        	
        	    listSingle(handler);
-           CheckAgeLimit(handler);
+            CheckAgeLimit(handler);
+            US03BirthDeath(handler);
+            US10Marriage(handler);
        	}
        	
-       	// to list living single
-       	public static void listSingle(GedFileHandler handler)
+    // to list living single
+	public static void listSingle(GedFileHandler handler)
      {
         System.out.println("--------------Single in the family are:-------------");
-        
-        for(IndividualRecord temp : handler.indiRecords)
-        {
-            
+        for(IndividualRecord temp : handler.indiRecords){
             if(temp.fams.size()==0 && temp.deathDate== null)
             System.out.println("ID:"+temp.id+ "   "+temp.name);
-  
         }
+	}
 
-    }
-
-     //  to chick the people who are more than 150 years old
+    //  to check the people who are more than 150 years old
     public static void CheckAgeLimit(GedFileHandler handler)
     {
      
@@ -444,31 +441,82 @@ public class P04
       
           int test=0;
           for (String t : tokens){
-            
             if(test==2){
                 int year = Integer.parseInt(t);
                 int age = 2016 - year;
-                System.out.println("DOB is " + temp.birthDate);
-                 System.out.println("Name :"+temp.name+ "   Age "+ age);
-                 if(age >150){
-                    System.out.println("this idividual age is more than 150 ");
+           	 	//System.out.println("DOB is " + temp.birthDate);
+           	 	//System.out.println("Name :"+temp.name+ "   Age "+ age);
+                if(age >150){
+                	 System.out.println("DOB is " + temp.birthDate);
+                	 System.out.println("Name :"+temp.name+ "   Age "+ age);
+                	 System.out.println("This individual age is more than 150 ");
                  }
-                
             }
             test++;
           } // for loop ends here
-  
         }
-          
-        
-    
-        
     } // function CheckAgeLimit ends here 
+  
+    //  to check to make sure person is not dead before birth
+    public static void US03BirthDeath(GedFileHandler handler)
+    {
+        System.out.println("------Check that death doesn't happen before birth:------");
+        for(IndividualRecord temp : handler.indiRecords){
+        	if (temp.deathDate != null){ //ignore all people without death dates or get exception error
+				  String sb = temp.birthDate;
+				  String[] tokensb = sb.split(" ");
+				  int birthYear = 0;
+				  int test = 0;
+				  for (String t : tokensb){
+					  if(test==2){
+						  birthYear = Integer.parseInt(t);
+					  }
+					  test++;
+				  } // for loop ends here
+				
+				  String sd = temp.deathDate;
+				  String[] tokensd = sd.split(" ");
+				  int deathYear = 0;
+				  test = 0;
+				  for (String t : tokensd){
+					  if(test==2){
+						  deathYear = Integer.parseInt(t);
+					  }
+					  test++;
+					} // for loop ends here
+				  if (deathYear < birthYear){
+					  System.out.println("ErrorUS03: Death happens before birth"); 
+					  System.out.println("ErrorUS03: Name " + temp.name); 
+				  }
+        	}
+        } // Indi for loop ends here
+    } // function US10Marriage ends here 
     
+    //  to check to make sure person is older than 14 years old to be married
+    public static void US10Marriage(GedFileHandler handler)
+    {
+        System.out.println("------Check Marriage is after 14 years old:------");
+        for(IndividualRecord temp : handler.indiRecords){
+        	if(temp.fams != null){ //ignore all people not married or get exception error
+				String sb = temp.birthDate;
+				String[] tokens = sb.split(" ");
+				int test = 0;	
+				for (String t : tokens){
+					if(test == 2){
+						int year = Integer.parseInt(t);
+						int age = 2016 - year;
+						if(age <= 14){
+							System.out.println("ErrorUS10: This individual is less than 14 years old and married");
+							System.out.println("ErrorUS10: Name " + temp.name);
+						}
+					}
+					test++;
+				} // for loop ends here
+        	}
+        } // Indi for loop ends here
+    } // function US10Marriage ends here     
     
-    
-
-     }
+}// public class P04 ends here
   
  
  

@@ -10,37 +10,30 @@ ID:8   Alice /Jones/
 ID:9   Kyle /Jhonson/
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
+ID:12   Fester /Lyman/
+ID:13   MarySara /Lyman/
+ID:14   Sally /Lyman/
+ID:15   Samantha /Lyman/
+ID:16   Jeff /Lanisster/
 _____________________________________________________________________
 Families in the File:
 Family ID:1| Husband ID:2 Name:Jhon /Smith/| Wife ID:4 Name:Sara /Lyman/
 Family ID:2| Husband ID:2 Name:Jhon /Smith/| Wife ID:3 Name:Jessica /Palmer/
 Family ID:3| Husband ID:5 Name:Ethan /Smith/| Wife ID:6 Name:Ruby /Williams/
-Family ID:4| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
-Family ID:5| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
+Family ID:4| Husband ID:12 Name:Fester /Lyman/| Wife ID:13 Name:MarySara /Lyman/
+Family ID:5| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
+Family ID:6| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
+Family ID:7| Husband ID:16 Name:Jeff /Lanisster/| Wife ID:15 Name:Samantha /Lyman/
 --------------Single in the family are:-------------
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
 --------------Check Age Limit for Individual Here:-------------
-DOB is 5 FEB 1986
-Name :Alex /Smith/   Age 30
-DOB is 13 OCT 1960
-Name :Jhon /Smith/   Age 56
-DOB is 7 OCT 1966
-Name :Jessica /Palmer/   Age 50
-DOB is 8 JUN 1964
-Name :Sara /Lyman/   Age 52
 DOB is 3 APR 1500
 Name :Ethan /Smith/   Age 516
-this idividual age is more than 150 
-DOB is 4 MAY 1940
-Name :Ruby /Williams/   Age 76
-DOB is 5 DEC 1939
-Name :Jacob /Jones/   Age 77
-DOB is 5 AUG 1978
-Name :Alice /Jones/   Age 38
-DOB is 6 MAR 1973
-Name :Kyle /Jhonson/   Age 43
-DOB is 6 FEB 1997
-Name :Julia /Johnson/   Age 19
-DOB is 6 FEB 1994
-Name :Mike /Smith/   Age 22
+This individual age is more than 150 
+------Check that death doesn't happen before birth:------
+ErrorUS03: Death happens before birth
+ErrorUS03: Name Sally /Lyman/
+------Check Marriage is after 14 years old:------
+ErrorUS10: This individual is less than 14 years old and married
+ErrorUS10: Name Jeff /Lanisster/
