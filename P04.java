@@ -421,7 +421,7 @@ public class P04
     // to list living single
 	public static void listSingle(GedFileHandler handler)
      {
-        System.out.println("--------------Single in the family are:-------------");
+        System.out.println("--------------Living Single in the family are:-------------");
         for(IndividualRecord temp : handler.indiRecords){
             if(temp.fams.size()==0 && temp.deathDate== null)
             System.out.println("ID:"+temp.id+ "   "+temp.name);
