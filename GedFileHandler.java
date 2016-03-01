@@ -57,8 +57,17 @@
 				this.level = Integer.parseInt(lineValues[0]);
 				if(level == 0)
 				{
-
-					this.tag = Tag.valueOf(lineValues[lineValues.length - 1]);
+					try
+					{
+						this.tag = Tag.valueOf(lineValues[lineValues.length - 1]);
+					}catch(IllegalArgumentException e)
+					{
+						this.tag = Tag.INVALIDTAG;
+					}
+					catch(NullPointerException e)
+					{
+						this.tag = Tag.INVALIDTAG;
+					}
 					if(lineValues.length > 2)
 					{
 						this.value=lineValues[1];
@@ -222,7 +231,7 @@
 				System.out.println("Error, couldn't open the file");
 				return false;
 			}
-			
+
 		}
 		private void constructIndiRecords ()
 		{
@@ -395,7 +404,7 @@
 			this.famc=famc;
 
 		}
-		
+
 	}
 	//To sort the list of individual records based on their ids
 	class IndiRecordsComparator implements Comparator<IndividualRecord>
@@ -412,7 +421,7 @@
 		String marriageDate,divorceDate;
 		Date marriageDate2,divorceDate2;
 		List <String> childerenList;
-		
+
 		public FamilyRecord (int familyId, int husbandId, int wifeId,List<String> childerenList, String marriageDate, String divorceDate,Date marriageDate2,Date divorceDate2)
 		{
 			this.familyId=familyId;
