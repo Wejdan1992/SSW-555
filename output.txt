@@ -24,7 +24,7 @@ Family ID:4| Husband ID:12 Name:Fester /Lyman/| Wife ID:13 Name:MarySara /Lyman/
 Family ID:5| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
 Family ID:6| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
 Family ID:7| Husband ID:16 Name:Jeff /Lanisster/| Wife ID:15 Name:Samantha /Lyman/
---------------Single in the family are:-------------
+--------------Living Single in the family are:-------------
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
 --------------Check Age Limit for Individual Here:-------------
@@ -37,3 +37,13 @@ ErrorUS03: Name Sally /Lyman/
 ------Check Marriage is after 14 years old:------
 ErrorUS10: This individual is less than 14 years old and married
 ErrorUS10: Name Jeff /Lanisster/
+------Check if there's a divorce before marriage:------
+2  Divorce(s) before marriage(s) found:
+Case 1:
+Husband:Jhon /Smith/ | Wife:Sara /Lyman/
+Marriage Date:04 May 1990 | Divorce Date:12 Mar 1984
+-----------------------------
+Case 2:
+Husband:Kyle /Jhonson/ | Wife:Alice /Jones/
+Marriage Date:10 Mar 2000 | Divorce Date:01 Jan 2000
+-----------------------------

@@ -291,7 +291,7 @@
 							}
 						}
 					}
-					this.indiRecords.add(new IndividualRecord(id,name,sex,birthDate,deathDate,fams,famc));
+					this.indiRecords.add(new IndividualRecord(id,name,sex,birthDate,deathDate,birthDate2,deathDate2,fams,famc));
 					this.indiRecordsNumber++;
 				}
 			}   
@@ -359,7 +359,7 @@
 							}
 						}
 					}
-					this.famRecords.add(new FamilyRecord(familyId,husbandId,wifeId,childerenList,marriageDate,divorceDate));
+					this.famRecords.add(new FamilyRecord(familyId,husbandId,wifeId,childerenList,marriageDate,divorceDate,marriageDate2,divorceDate2));
 					this.famRecordsNumber++;
 				}
 			}   
@@ -377,17 +377,20 @@
 		int id;
 		String birthDate;
 		String deathDate;
+		Date birthDate2,deathDate2;
 		List<String> fams;
 		String famc;
 
 
-		public IndividualRecord(int id, String name, String sex, String birthDate, String deathDate, List<String> fams, String famc)
+		public IndividualRecord(int id, String name, String sex, String birthDate, String deathDate,Date birthDate2,Date deathDate2, List<String> fams, String famc)
 		{ 
 			this.id=id;
 			this.name=name;
 			this.sex=sex;
 			this.birthDate=birthDate;
 			this.deathDate=deathDate;
+			this.birthDate2=birthDate2;
+			this.deathDate2=deathDate2;
 			this.fams=fams;
 			this.famc=famc;
 
@@ -407,9 +410,10 @@
 	{
 		int familyId,husbandId,wifeId;
 		String marriageDate,divorceDate;
+		Date marriageDate2,divorceDate2;
 		List <String> childerenList;
 		
-		public FamilyRecord (int familyId, int husbandId, int wifeId,List<String> childerenList, String marriageDate, String divorceDate)
+		public FamilyRecord (int familyId, int husbandId, int wifeId,List<String> childerenList, String marriageDate, String divorceDate,Date marriageDate2,Date divorceDate2)
 		{
 			this.familyId=familyId;
 			this.husbandId=husbandId;
@@ -417,6 +421,8 @@
 			this.childerenList = childerenList;
 			this.marriageDate = marriageDate;
 			this.divorceDate = divorceDate;
+			this.marriageDate2 = marriageDate2;
+			this.divorceDate2 = divorceDate2;
 		}
 	}
 	//To sort the list of families records based on their ids
