@@ -31,6 +31,7 @@ public class GedTest
       printAll();
         //------------------Tests---------------------//
       ListSingle();
+      listUpcomingBirthdays();
       CheckAgeLimit();
       US03BirthDeath();
       US10Marriage();
@@ -173,6 +174,7 @@ public static void CheckAgeLimit()
         } // Indi for loop ends here
     } // function US10Marriage ends here
 
+    //US04
     public static void divorceBeforeMarriage()
     {
       out.println("------Check if there's a divorce before marriage:------");
@@ -188,13 +190,46 @@ public static void CheckAgeLimit()
             result.append("Case "+count+":\n");
             result.append("Husband:"+  handler.getIndiById(temp.husbandId).name+ " | Wife:"+handler.getIndiById(temp.wifeId).name+"\n");
             result.append("Marriage Date:"+dateFormat.format(temp.marriageDate2)+" | Divorce Date:"+ dateFormat.format(temp.divorceDate2)+"\n");
-            result.append("-----------------------------\n");
             count++;
           }
         }
       }
       out.println(count-1+"  Divorce(s) before marriage(s) found:");
       out.print(result.toString());
+    }
+    //US38
+    public static void listUpcomingBirthdays()
+    {
+      out.println("------List all upcoming birthdays:------");
+      Calendar today = Calendar.getInstance();
+      int today_Month = today.get(Calendar.MONTH);
+      int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
+      int count = 1;
+      for(IndividualRecord temp: handler.indiRecords)
+      {
+        //Listing only living people
+        if(temp.deathDate2 == null)
+        {
+          Calendar birthDay = Calendar.getInstance();
+          birthDay.setTime(temp.birthDate2);
+          int bd_Month = birthDay.get(Calendar.MONTH);
+          int bd_dayOfMonth = birthDay.get(Calendar.DAY_OF_MONTH);
+          if( today_Month == bd_Month)
+          {
+            if(Math.abs(today_dayOfMonth - bd_dayOfMonth) <= 30)
+            {
+              out.println(count+". Name:"+ temp.name +" | Birth Day:"+ dateFormat.format(temp.birthDate2));
+              count++;
+            }
+          }
+          else if(bd_Month - today_Month == 1 && bd_dayOfMonth <= today_dayOfMonth)
+          {
+            out.println(count+". Name:"+ temp.name +" | Birth Day:"+ dateFormat.format(temp.birthDate2));
+            count++;
+          }
+        }
+      }
+      
     }
 
     //------------------------------------------End of Test Cases -------------------------------// 

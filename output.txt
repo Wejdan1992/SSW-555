@@ -27,8 +27,11 @@ Family ID:7| Husband ID:16 Name:Jeff /Lanisster/| Wife ID:15 Name:Samantha /Lyma
 --------------Living Single in the family are:-------------
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
+------List all upcoming birthdays:------
+1. Name:Ruby /Williams/ | Birth Day:04 Mar 1940
+2. Name:Kyle /Jhonson/ | Birth Day:26 Mar 1973
 --------------Check Age Limit for Individual Here:-------------
-DOB is 3 APR 1500
+DOB is 1 APR 1500
 Name :Ethan /Smith/   Age 516
 This individual age is more than 150 
 ------Check that death doesn't happen before birth:------
@@ -42,8 +45,6 @@ ErrorUS10: Name Jeff /Lanisster/
 Case 1:
 Husband:Jhon /Smith/ | Wife:Sara /Lyman/
 Marriage Date:04 May 1990 | Divorce Date:12 Mar 1984
------------------------------
 Case 2:
 Husband:Kyle /Jhonson/ | Wife:Alice /Jones/
 Marriage Date:10 Mar 2000 | Divorce Date:01 Jan 2000
------------------------------
