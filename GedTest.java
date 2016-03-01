@@ -63,7 +63,7 @@ public class GedTest
     // to list living single
   public static void ListSingle()
      {
-        out.println("--------------Single in the family are:-------------");
+        out.println("--------------Living Single in the family are:-------------");
         for(IndividualRecord temp : handler.indiRecords){
             if(temp.fams.size()==0 && temp.deathDate== null)
             out.println("ID:"+temp.id+ "   "+temp.name);
