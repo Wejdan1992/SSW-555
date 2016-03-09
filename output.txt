@@ -24,12 +24,28 @@ Family ID:4| Husband ID:12 Name:Fester /Lyman/| Wife ID:13 Name:MarySara /Lyman/
 Family ID:5| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
 Family ID:6| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
 Family ID:7| Husband ID:16 Name:Jeff /Lanisster/| Wife ID:15 Name:Samantha /Lyman/
---------------Living Single in the family are:-------------
+-------------- List the Living Single in the family:-------------
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
+--------------List the Living Married in the Family:-------------
+ID:2   Jhon /Smith/
+ID:3   Jessica /Palmer/
+ID:4   Sara /Lyman/
+ID:6   Ruby /Williams/
+ID:7   Jacob /Jones/
+ID:8   Alice /Jones/
+ID:9   Kyle /Jhonson/
+ID:12   Fester /Lyman/
+ID:13   MarySara /Lyman/
+ID:15   Samantha /Lyman/
+ID:16   Jeff /Lanisster/
 ------List all upcoming birthdays:------
 1. Name:Ruby /Williams/ | Birth Day:04 Mar 1940
 2. Name:Kyle /Jhonson/ | Birth Day:26 Mar 1973
+--------------List the Deceased in the Family :-------------
+ID:1   Alex /Smith/
+ID:5   Ethan /Smith/
+ID:14   Sally /Lyman/
 --------------Check Age Limit for Individual Here:-------------
 DOB is 1 APR 1500
 Name :Ethan /Smith/   Age 516
