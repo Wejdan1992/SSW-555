@@ -30,8 +30,10 @@ public class GedTest
       dateFormat = new SimpleDateFormat("dd MMM yyyy");
       printAll();
         //------------------Tests---------------------//
-      ListSingle();
+      listSingle();
+      listMarried();
       listUpcomingBirthdays();
+      listDeceased();
       CheckAgeLimit();
       US03BirthDeath();
       US10Marriage();
@@ -71,9 +73,9 @@ public class GedTest
      //--------------------------------------------------------------------------------------//
     //-------------------------------------Test Cases ---------------------------------------//
     // to list living single
-public static void ListSingle()
+public static void listSingle()
 {
-  out.println("--------------Living Single in the family are:-------------");
+  out.println("-------------- List the Living Single in the family:-------------");
   for(IndividualRecord temp : handler.indiRecords)
   {
     if(temp.fams.size()==0 && temp.deathDate== null)
@@ -230,7 +232,27 @@ public static void CheckAgeLimit()
         }
       }
       
-    }
+    }       
+             //list living married
+              public static void listMarried()
+           {
+                out.println("--------------List the Living Married in the Family:-------------");
+                 for(IndividualRecord temp : handler.indiRecords)
+                  {
+                     if(temp.fams.size()!=0 && temp.deathDate== null)
+                        out.println("ID:"+temp.id+ "   "+temp.name);
+                   }
+           } 
+               // list Deceased people
+              public static void listDeceased()
+             {
+                  out.println("--------------List the Deceased in the Family :-------------");
+                      for(IndividualRecord temp : handler.indiRecords)
+                     {
+                         if( temp.deathDate!= null)
+                            out.println("ID:"+temp.id+ "   "+temp.name);
+                      }
+               }
 
     //------------------------------------------End of Test Cases -------------------------------// 
     //-------------------------------------------------------------------------------------------//     
