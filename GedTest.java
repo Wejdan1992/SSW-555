@@ -25,15 +25,19 @@ public class GedTest {
 			printAll();
 			// ------------------Tests---------------------//
 			listSingle();
-			listMarried();
-			listUpcomingBirthdays();
-			listDeceased();
-			CheckAgeLimit();
-			US03BirthDeath();
-			US10Marriage();
+			//Lists below
+			US29ListDeceased();
+			US30ListMarried();
+			US38ListUpcomingBirthdays();
+			
+			//Checks below
 			US01DateAfterCurrent();
 			US02BirthBeforeMarriage();
-			divorceBeforeMarriage();
+			US03BirthDeath();
+			US04DivorceBeforeMarriage();
+			US07CheckAgeLimit();
+			US10Marriage();
+			
 			// ---------------------------------------------//
 			System.out.println("Done .. the result in output.txt");
 			out.close();
@@ -70,7 +74,7 @@ public class GedTest {
 	}
 
 	// US07 Check the people who are more than 150 years old
-	public static void CheckAgeLimit() {
+	public static void US07CheckAgeLimit() {
 		out.println("-----------Check Age Limit for Individual Here:-----------");
 		// Developer note: Because we are on PC and Mac we need to use
 		// + System.lineSeparator() to get an accurate new line
@@ -92,7 +96,7 @@ public class GedTest {
 			}
 		}
 		out.print(result.toString());
-	} // function CheckAgeLimit ends here
+	} // -End US07 CheckAgeLimit
 
 	// US03BirthDeath - To check to make sure person is not dead before birth
 	public static void US03BirthDeath() {
@@ -111,8 +115,7 @@ public class GedTest {
 		}
 	} // -End US03BirthDeath
 
-	// US10Marriage - To check to make sure person is older than 14 years old to
-	// be married
+	// US10Marriage - To check to make sure person is older than 14 years old to be married
 	public static void US10Marriage() {
 		out.println("------US10 Check Marriage is after 14 years old:------");
 		// Developer note: Because we are on PC and Mac we need to use
@@ -236,7 +239,7 @@ public class GedTest {
 	} // -End US02BirthBeforeMarriage
 		
 	// US04
-	public static void divorceBeforeMarriage() {
+	public static void US04DivorceBeforeMarriage() {
 		out.println("------Check if there's a divorce before marriage:------");
 		int count = 0;
 		StringBuilder result = new StringBuilder();
@@ -258,7 +261,7 @@ public class GedTest {
 	}
 
 	// US38
-	public static void listUpcomingBirthdays() {
+	public static void US38ListUpcomingBirthdays() {
 		out.println("------List all upcoming birthdays:------");
 		Calendar today = Calendar.getInstance();
 		int today_Month = today.get(Calendar.MONTH);
@@ -286,7 +289,7 @@ public class GedTest {
 	}
 
 	// US30 list living married
-	public static void listMarried() {
+	public static void US30ListMarried() {
 		out.println("--------------List the Living Married in the Family:-------------");
 		for (IndividualRecord temp : handler.indiRecords) {
 			if (temp.fams.size() != 0 && temp.deathDate2 == null)
@@ -295,7 +298,7 @@ public class GedTest {
 	}
 
 	// US29 list Deceased people
-	public static void listDeceased() {
+	public static void US29ListDeceased() {
 		out.println("--------------List the Deceased in the Family :-------------");
 		for (IndividualRecord temp : handler.indiRecords) {
 			if (temp.deathDate2 != null)
