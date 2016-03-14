@@ -31,6 +31,8 @@ public class GedTest {
 			CheckAgeLimit();
 			US03BirthDeath();
 			US10Marriage();
+			US01DateAfterCurrent();
+			US02BirthBeforeMarriage();
 			divorceBeforeMarriage();
 			// ---------------------------------------------//
 			System.out.println("Done .. the result in output.txt");
@@ -83,9 +85,9 @@ public class GedTest {
 				int birthYear = birthdate.get(Calendar.YEAR);
 				if (todayYear - birthYear > 150) {
 					int age = todayYear - birthYear;
-					result.append("DOB is " + temp.birthDate);
-					result.append("Name :" + temp.name + "   Age " + age);
-					result.append("This individual age is more than 150 ");
+					result.append("DOB is " + dateFormat.format(temp.birthDate2) + System.lineSeparator());
+					result.append("Name :" + temp.name + "   Age " + age + System.lineSeparator());
+					result.append("This individual age is more than 150 " + System.lineSeparator());
 				}
 			}
 		}
@@ -132,9 +134,9 @@ public class GedTest {
 				int birthDay = birthdate.get(Calendar.DAY_OF_MONTH);
 				if (todayYear - birthYear < 14 || (todayYear - birthYear == 14 && todayMonth < birthMonth)
 						|| (todayYear - birthYear == 14 && todayMonth == birthMonth && todayDay < birthDay)) {
-					result.append("ErrorUS03 : This individual is less than 14 years old and married"
+					result.append("ErrorUS10 : This individual is less than 14 years old and married"
 							+ System.lineSeparator());
-					result.append("Name:" + temp.name + System.lineSeparator());
+					result.append("Name:" + temp.name + " Birth: " + dateFormat.format(temp.birthDate2) + System.lineSeparator());
 				}
 			}
 		}
@@ -144,8 +146,7 @@ public class GedTest {
 	// US01 Dates before current date Dates (birth, marriage, divorce, death)
 	// should not be after the current date
 	public static void US01DateAfterCurrent() {
-		out.println("------US01 Check that Dates" + "(birth, marriage, divorce, death)"
-				+ "should not be after the current date:------");
+		out.println("------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------");
 		StringBuilder result = new StringBuilder();
 		Calendar today = Calendar.getInstance();
 		int todayYear = today.get(Calendar.YEAR);
@@ -158,10 +159,10 @@ public class GedTest {
 				int checkYear = checkDate.get(Calendar.YEAR);
 				int checkMonth = checkDate.get(Calendar.MONTH);
 				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear > checkYear || (todayYear == checkYear && todayMonth > checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay > checkDay)) {
+				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
 					result.append("ErrorUS01 : Birthday occurs after Today" + System.lineSeparator());
-					result.append("Name: " + temp.name + "Birthdate " + temp.birthDate2 + System.lineSeparator());
+					result.append("Name: " + temp.name + "Birthdate " + dateFormat.format(temp.birthDate2) + System.lineSeparator());
 				}
 			}
 			if (temp.deathDate2 != null) {
@@ -170,10 +171,10 @@ public class GedTest {
 				int checkYear = checkDate.get(Calendar.YEAR);
 				int checkMonth = checkDate.get(Calendar.MONTH);
 				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear > checkYear || (todayYear == checkYear && todayMonth > checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay > checkDay)) {
+				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
 					result.append("ErrorUS01 : Deathday occurs after Today" + System.lineSeparator());
-					result.append("Name: " + temp.name + "Deathday " + temp.deathDate2 + System.lineSeparator());
+					result.append("Name: " + temp.name + "Deathday " + dateFormat.format(temp.deathDate2) + System.lineSeparator());
 				}
 			}
 		}
@@ -184,11 +185,11 @@ public class GedTest {
 				int checkYear = checkDate.get(Calendar.YEAR);
 				int checkMonth = checkDate.get(Calendar.MONTH);
 				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear > checkYear || (todayYear == checkYear && todayMonth > checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay > checkDay)) {
+				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
 					result.append("ErrorUS01 : Marriage date occurs after Today" + System.lineSeparator());
 					result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
-							+ handler.getIndiById(temp.wifeId).name + " married " + temp.marriageDate2
+							+ handler.getIndiById(temp.wifeId).name + " married " + dateFormat.format(temp.marriageDate2)
 							+ System.lineSeparator());
 				}
 			}
@@ -198,11 +199,11 @@ public class GedTest {
 				int checkYear = checkDate.get(Calendar.YEAR);
 				int checkMonth = checkDate.get(Calendar.MONTH);
 				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear > checkYear || (todayYear == checkYear && todayMonth > checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay > checkDay)) {
+				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
 					result.append("ErrorUS01 : Divorce date occurs after Today" + System.lineSeparator());
 					result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
-							+ handler.getIndiById(temp.wifeId).name + " divorced " + temp.divorceDate2
+							+ handler.getIndiById(temp.wifeId).name + " divorced " + dateFormat.format(temp.divorceDate2)
 							+ System.lineSeparator());
 				}
 			}
@@ -265,7 +266,7 @@ public class GedTest {
 		int count = 1;
 		for (IndividualRecord temp : handler.indiRecords) {
 			// Listing only living people
-			if (temp.deathDate2 == null) {
+			if (temp.deathDate2 == null && temp.birthDate2 != null) {
 				Calendar birthDay = Calendar.getInstance();
 				birthDay.setTime(temp.birthDate2);
 				int bd_Month = birthDay.get(Calendar.MONTH);
