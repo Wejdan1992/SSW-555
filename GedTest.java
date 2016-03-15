@@ -38,6 +38,7 @@ public class GedTest {
 			US07CheckAgeLimit();
 			US10Marriage();
 			US12parentsNotTooOld();
+			US15fewerThan15Siblings();
 			
 			// ---------------------------------------------//
 			System.out.println("Done .. the result in output.txt");
@@ -328,7 +329,7 @@ out.print(result.toString());
 	{
 		StringBuilder result = new StringBuilder();
 		int count = 0;
-		out.println("--------------Check the difference in age between parents and childeren :-------------");
+		out.println("----US 12Check the difference in age between parents and childeren :----");
 		for(FamilyRecord temp : handler.famRecords)
 		{
 			IndividualRecord father = handler.getIndiById(temp.husbandId);
@@ -382,6 +383,25 @@ out.print(result.toString());
 		out.println(count + " Cases(s) Founded:" + System.lineSeparator());
 		out.println(result.toString());
 		
+	}
+	//US15
+	//owner: Fawaz
+	public static void US15fewerThan15Siblings()
+	{
+		out.println("------US15 Check if the number of siblings is less than 15 :---------");
+		int count = 0;
+		 StringBuilder result = new StringBuilder();
+		for(FamilyRecord temp : handler.famRecords)
+		{
+			
+			if(temp.childerenList.size() >= 15)
+			{
+				count++;
+				result.append("Case "+ count+": Family ID:"+ temp.familyId);
+			}
+		}
+		out.println(count + " Cases(s) Founded:" + System.lineSeparator());
+		out.println(result.toString());
 	}
 
 	// ------------------End of Test Cases--------------//

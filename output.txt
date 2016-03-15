@@ -24,6 +24,20 @@ ID:22   barack Obama /Obama/
 ID:23   Michelle Obama /Obama/
 ID:24    Malia Obama /Obama/
 ID:25   Natasha Obama /Obama/
+ID:26   John Obama /Obama/
+ID:27   Nawal Obama /Obama/
+ID:28   Hend Obama /Obama/
+ID:29   Adam Obama /Obama/
+ID:30   Adam Obama /Obama/
+ID:31   James Obama /Obama/
+ID:32   Sarah Obama /Obama/
+ID:33   Martha Obama /Obama/
+ID:34   Marry Obama /Obama/
+ID:35   Henry Obama /Obama/
+ID:36   Caroline Obama /Obama/
+ID:37   David Obama /Obama/
+ID:38   Julia Obama /Obama/
+ID:39   Alexander Obama /Obama/
 _____________________________________________________________________
 Families in the File:
 Family ID:1| Husband ID:2 Name:Jhon /Smith/| Wife ID:4 Name:Sara /Lyman/
@@ -42,6 +56,20 @@ ID:11   Mike /Smith/
 ID:20   Jamie /Lannister/
 ID:24    Malia Obama /Obama/
 ID:25   Natasha Obama /Obama/
+ID:26   John Obama /Obama/
+ID:27   Nawal Obama /Obama/
+ID:28   Hend Obama /Obama/
+ID:29   Adam Obama /Obama/
+ID:30   Adam Obama /Obama/
+ID:31   James Obama /Obama/
+ID:32   Sarah Obama /Obama/
+ID:33   Martha Obama /Obama/
+ID:34   Marry Obama /Obama/
+ID:35   Henry Obama /Obama/
+ID:36   Caroline Obama /Obama/
+ID:37   David Obama /Obama/
+ID:38   Julia Obama /Obama/
+ID:39   Alexander Obama /Obama/
 --------------List the Deceased in the Family :-------------
 ID:1   Alex /Smith/
 ID:5   Ethan /Smith/
@@ -101,8 +129,14 @@ ErrorUS10 : This individual is less than 14 years old and married
 Name:Cersei /Lannister/ Birth: 22 Mar 2016
 ErrorUS10 : This individual is less than 14 years old and married
 Name:Jamie /Lannister/ Birth: 23 Mar 2016
---------------Check the difference in age between parents and childeren :-------------
-5 Cases(s) Founded:
+ErrorUS10 : This individual is less than 14 years old and married
+Name:John Obama /Obama/ Birth: 02 May 2002
+ErrorUS10 : This individual is less than 14 years old and married
+Name:Nawal Obama /Obama/ Birth: 02 May 2002
+ErrorUS10 : This individual is less than 14 years old and married
+Name:Hend Obama /Obama/ Birth: 02 May 2003
+----US 12Check the difference in age between parents and childeren :----
+33 Cases(s) Founded:
 
 Case 1: Father is 460 older than his child| Father's Name:Ethan /Smith/| Father's ID:5 || Child's Name:Jhon /Smith/ | Child's ID:@I2@
 
@@ -114,4 +148,64 @@ Case 4: Father is 102 older than his child| Father's Name:barack Obama /Obama/| 
 
 Case 5: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Natasha Obama /Obama/ | Child's ID:@I25@
 
+Case 6: Father is 103 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:John Obama /Obama/ | Child's ID:@I26@
 
+Case 7: Mother is 102 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:John Obama /Obama/ | Child's ID:@I26@
+
+Case 8: Father is 103 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
+
+Case 9: Mother is 102 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
+
+Case 10: Father is 104 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Hend Obama /Obama/ | Child's ID:@I28@
+
+Case 11: Mother is 103 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Hend Obama /Obama/ | Child's ID:@I28@
+
+Case 12: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Adam Obama /Obama/ | Child's ID:@I29@
+
+Case 13: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Adam Obama /Obama/ | Child's ID:@I29@
+
+Case 14: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Adam Obama /Obama/ | Child's ID:@I30@
+
+Case 15: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Adam Obama /Obama/ | Child's ID:@I30@
+
+Case 16: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:James Obama /Obama/ | Child's ID:@I31@
+
+Case 17: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:James Obama /Obama/ | Child's ID:@I31@
+
+Case 18: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
+
+Case 19: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
+
+Case 20: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
+
+Case 21: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
+
+Case 22: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
+
+Case 23: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
+
+Case 24: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
+
+Case 25: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
+
+Case 26: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Caroline Obama /Obama/ | Child's ID:@I36@
+
+Case 27: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Caroline Obama /Obama/ | Child's ID:@I36@
+
+Case 28: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:David Obama /Obama/ | Child's ID:@I37@
+
+Case 29: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:David Obama /Obama/ | Child's ID:@I37@
+
+Case 30: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Julia Obama /Obama/ | Child's ID:@I38@
+
+Case 31: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Julia Obama /Obama/ | Child's ID:@I38@
+
+Case 32: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Alexander Obama /Obama/ | Child's ID:@I39@
+
+Case 33: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Alexander Obama /Obama/ | Child's ID:@I39@
+
+
+------US15 Check if the number of siblings is less than 15 :---------
+1 Cases(s) Founded:
+
+Case 1: Family ID:10
