@@ -188,6 +188,25 @@
 			}
 			return null;
 		}
+		public  IndividualRecord getIndiByIdString(String id)
+		{
+			int intId = -1;
+			try
+			{
+				 intId = Integer.parseInt(id.replaceAll("@","").replace("I",""));
+			}catch(NumberFormatException e)
+			{
+				return null;
+			}
+			for(IndividualRecord temp: indiRecords)
+			{
+				if(temp.id == intId)
+				{
+					return temp;
+				}
+			}
+			return null;
+		}
 
 		public  boolean constructRecords() throws IOException
 		{
