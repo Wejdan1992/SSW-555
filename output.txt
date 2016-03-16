@@ -1,0 +1,202 @@
+Individuals in the File:
+ID:1   Alex /Smith/
+ID:2   Jhon /Smith/
+ID:3   Jessica /Palmer/
+ID:4   Sara /Lyman/
+ID:5   Ethan /Smith/
+ID:6   Ruby /Williams/
+ID:7   Jacob /Jones/
+ID:8   Alice /Jones/
+ID:9   Kyle /Jhonson/
+ID:10   Julia /Johnson/
+ID:11   Mike /Smith/
+ID:12   Fester /Lyman/
+ID:13   MarySara /Lyman/
+ID:14   Sally /Lyman/
+ID:15   Samantha /Lyman/
+ID:16   Tyrion /Lannister/
+ID:17   Tywin /Lannister/
+ID:18   Joanna /Lannister/
+ID:19   Cersei /Lannister/
+ID:20   Jamie /Lannister/
+ID:21   Robert Baratheon /Baratheon/
+ID:22   barack Obama /Obama/
+ID:23   Michelle Obama /Obama/
+ID:24    Malia Obama /Obama/
+ID:25   Natasha Obama /Obama/
+ID:26   John Obama /Obama/
+ID:27   Nawal Obama /Obama/
+ID:28   Hend Obama /Obama/
+ID:29   Adam Obama /Obama/
+ID:30   Adam Obama /Obama/
+ID:31   James Obama /Obama/
+ID:32   Sarah Obama /Obama/
+ID:33   Martha Obama /Obama/
+ID:34   Marry Obama /Obama/
+ID:35   Henry Obama /Obama/
+ID:36   Caroline Obama /Obama/
+ID:37   David Obama /Obama/
+ID:38   Julia Obama /Obama/
+ID:39   Alexander Obama /Obama/
+_____________________________________________________________________
+Families in the File:
+Family ID:1| Husband ID:2 Name:Jhon /Smith/| Wife ID:4 Name:Sara /Lyman/
+Family ID:2| Husband ID:2 Name:Jhon /Smith/| Wife ID:3 Name:Jessica /Palmer/
+Family ID:3| Husband ID:5 Name:Ethan /Smith/| Wife ID:6 Name:Ruby /Williams/
+Family ID:4| Husband ID:12 Name:Fester /Lyman/| Wife ID:13 Name:MarySara /Lyman/
+Family ID:5| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
+Family ID:6| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
+Family ID:7| Husband ID:16 Name:Tyrion /Lannister/| Wife ID:15 Name:Samantha /Lyman/
+Family ID:8| Husband ID:17 Name:Tywin /Lannister/| Wife ID:18 Name:Joanna /Lannister/
+Family ID:9| Husband ID:21 Name:Robert Baratheon /Baratheon/| Wife ID:19 Name:Cersei /Lannister/
+Family ID:10| Husband ID:22 Name:barack Obama /Obama/| Wife ID:23 Name:Michelle Obama /Obama/
+------------ US31 List the Living Single in the family:-----------
+ID:10   Julia /Johnson/
+ID:11   Mike /Smith/
+ID:20   Jamie /Lannister/
+ID:24    Malia Obama /Obama/
+ID:25   Natasha Obama /Obama/
+ID:26   John Obama /Obama/
+ID:27   Nawal Obama /Obama/
+ID:28   Hend Obama /Obama/
+ID:29   Adam Obama /Obama/
+ID:30   Adam Obama /Obama/
+ID:31   James Obama /Obama/
+ID:32   Sarah Obama /Obama/
+ID:33   Martha Obama /Obama/
+ID:34   Marry Obama /Obama/
+ID:35   Henry Obama /Obama/
+ID:36   Caroline Obama /Obama/
+ID:37   David Obama /Obama/
+ID:38   Julia Obama /Obama/
+ID:39   Alexander Obama /Obama/
+--------------List the Deceased in the Family :-------------
+ID:1   Alex /Smith/
+ID:5   Ethan /Smith/
+ID:14   Sally /Lyman/
+ID:21   Robert Baratheon /Baratheon/
+--------------List the Living Married in the Family:-------------
+ID:2   Jhon /Smith/
+ID:3   Jessica /Palmer/
+ID:4   Sara /Lyman/
+ID:6   Ruby /Williams/
+ID:7   Jacob /Jones/
+ID:8   Alice /Jones/
+ID:9   Kyle /Jhonson/
+ID:12   Fester /Lyman/
+ID:13   MarySara /Lyman/
+ID:15   Samantha /Lyman/
+ID:16   Tyrion /Lannister/
+ID:17   Tywin /Lannister/
+ID:18   Joanna /Lannister/
+ID:19   Cersei /Lannister/
+ID:22   barack Obama /Obama/
+ID:23   Michelle Obama /Obama/
+------List all upcoming birthdays:------
+1. Name:Kyle /Jhonson/ | Birth Day:03 Apr 1973
+2. Name:Cersei /Lannister/ | Birth Day:22 Mar 2016
+3. Name:Jamie /Lannister/ | Birth Day:23 Mar 2016
+------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------
+ErrorUS01 : Birthday occurs after Today
+Name: Cersei /Lannister/Birthdate 22 Mar 2016
+ErrorUS01 : Birthday occurs after Today
+Name: Jamie /Lannister/Birthdate 23 Mar 2016
+ErrorUS01 : Divorce date occurs after Today
+Name: Robert Baratheon /Baratheon/ and Cersei /Lannister/ divorced 20 Mar 2016
+------US02 Check that birth should occur before marriage:------
+ErrorUS02 : Birth occured after marriage
+Name:Cersei /Lannister/ is born after marriage! Birth: 22 Mar 2016 Marriage: 01 Jan 2016
+------US03 Check that death doesn't happen before birth:------
+ErrorUS03 : Check to make sure person is not dead before birth
+Name:Sally /Lyman/ died before their birth! Birth: 01 Jan 1980 Death: 03 Jan 1978
+------Check if there's a divorce before marriage:------
+2  Divorce(s) before marriage(s) found:
+Case 1
+Husband:Jhon /Smith/ | Wife:Sara /Lyman/
+Marriage Date:04 May 1990 | Divorce Date:12 Mar 1984
+Case 2
+Husband:Kyle /Jhonson/ | Wife:Alice /Jones/
+Marriage Date:10 Mar 2000 | Divorce Date:01 Jan 2000
+-----------Check Age Limit for Individual Here:-----------
+DOB is 01 Apr 1500
+Name :Ethan /Smith/   Age 516
+This individual age is more than 150 
+------US10 Check Marriage is after 14 years old:------
+ErrorUS10 : This individual is less than 14 years old and married
+Name:Tyrion /Lannister/ Birth: 02 Jan 2005
+ErrorUS10 : This individual is less than 14 years old and married
+Name:Cersei /Lannister/ Birth: 22 Mar 2016
+----US 12Check the difference in age between parents and childeren :----
+33 Cases(s) Founded:
+
+Case 1: Father is 460 older than his child| Father's Name:Ethan /Smith/| Father's ID:5 || Child's Name:Jhon /Smith/ | Child's ID:@I2@
+
+Case 2: Father is 99 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name: Malia Obama /Obama/ | Child's ID:@I24@
+
+Case 3: Mother is 98 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name: Malia Obama /Obama/ | Child's ID:@I24@
+
+Case 4: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Natasha Obama /Obama/ | Child's ID:@I25@
+
+Case 5: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Natasha Obama /Obama/ | Child's ID:@I25@
+
+Case 6: Father is 103 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:John Obama /Obama/ | Child's ID:@I26@
+
+Case 7: Mother is 102 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:John Obama /Obama/ | Child's ID:@I26@
+
+Case 8: Father is 103 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
+
+Case 9: Mother is 102 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
+
+Case 10: Father is 104 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Hend Obama /Obama/ | Child's ID:@I28@
+
+Case 11: Mother is 103 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Hend Obama /Obama/ | Child's ID:@I28@
+
+Case 12: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Adam Obama /Obama/ | Child's ID:@I29@
+
+Case 13: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Adam Obama /Obama/ | Child's ID:@I29@
+
+Case 14: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Adam Obama /Obama/ | Child's ID:@I30@
+
+Case 15: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Adam Obama /Obama/ | Child's ID:@I30@
+
+Case 16: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:James Obama /Obama/ | Child's ID:@I31@
+
+Case 17: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:James Obama /Obama/ | Child's ID:@I31@
+
+Case 18: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
+
+Case 19: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
+
+Case 20: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
+
+Case 21: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
+
+Case 22: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
+
+Case 23: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
+
+Case 24: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
+
+Case 25: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
+
+Case 26: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Caroline Obama /Obama/ | Child's ID:@I36@
+
+Case 27: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Caroline Obama /Obama/ | Child's ID:@I36@
+
+Case 28: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:David Obama /Obama/ | Child's ID:@I37@
+
+Case 29: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:David Obama /Obama/ | Child's ID:@I37@
+
+Case 30: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Julia Obama /Obama/ | Child's ID:@I38@
+
+Case 31: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Julia Obama /Obama/ | Child's ID:@I38@
+
+Case 32: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Alexander Obama /Obama/ | Child's ID:@I39@
+
+Case 33: Mother is 101 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Alexander Obama /Obama/ | Child's ID:@I39@
+
+
+------US15 Check if the number of siblings is less than 15 :---------
+1 Cases(s) Founded:
+
+Case 1: Family ID:10
