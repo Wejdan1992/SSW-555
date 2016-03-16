@@ -138,7 +138,7 @@ public class GedTest {
 		int todayMonth = today.get(Calendar.MONTH);
 		int todayDay = today.get(Calendar.DAY_OF_MONTH);
 		for (IndividualRecord temp : handler.indiRecords) {
-			if (temp.fams != null && temp.birthDate2 != null) { // ignore all
+			if (temp.fams.size() > 0 && temp.birthDate2 != null) { // ignore all
 																// people not
 																// married
 				Calendar birthdate = Calendar.getInstance();
@@ -290,12 +290,12 @@ out.print(result.toString());
 				birthDay.setTime(temp.birthDate2);
 				int bd_Month = birthDay.get(Calendar.MONTH);
 				int bd_dayOfMonth = birthDay.get(Calendar.DAY_OF_MONTH);
-				if (today_Month == bd_Month) {
-					if (bd_dayOfMonth - today_dayOfMonth<= 30) {
+				if (today_Month == bd_Month && today_dayOfMonth <= bd_dayOfMonth)
+				 {
 						out.println(
 							count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
 						count++;
-					}
+					
 				} else if (bd_Month - today_Month == 1 && bd_dayOfMonth <= today_dayOfMonth) {
 					out.println(count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
 					count++;
@@ -407,7 +407,7 @@ out.print(result.toString());
 	// ------------------End of Test Cases--------------//
 	// -------------------------------------------------//
 
-	//Helper classes
+	//Helper methods
 	private static int compare(Date d1,Date d2)
 	{
 		Calendar date1 = Calendar.getInstance();
