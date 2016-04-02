@@ -403,6 +403,59 @@ out.print(result.toString());
 		out.println(count + " Cases(s) Founded:" + System.lineSeparator());
 		out.println(result.toString());
 	}
+	
+	////////////////////////////////////////////////////////
+	public static void CheckHusbandMale(){
+        System.out.println(" *********************** Check the Husband Gender ***************");
+        
+        for(FamilyRecord ftemp : handler.famRecords)
+        {
+            
+            
+            for(IndividualRecord Itemp : handler.indiRecords)
+                
+            {
+                
+                
+                if(ftemp.husbandId == Itemp.id && Itemp.sex.equalsIgnoreCase("F")){
+                    
+                    
+                    
+                    System.out.println("Husband with Id " + ftemp.husbandId + " is not a male ");
+                    break;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    public static void CheckWifeFemale(){
+        System.out.println(" *********************** Check the Wife Gender ***************");
+        
+        for(FamilyRecord ftemp : handler.famRecords)
+        {
+            
+            
+            for(IndividualRecord Itemp : handler.indiRecords)
+                
+            {
+                
+                
+                if(ftemp.wifeId == Itemp.id && Itemp.sex.equalsIgnoreCase("M")){
+                    
+                    
+                    
+                    System.out.println("Wife with Id " + ftemp.wifeId + " is not a fmale ");
+                    break;
+                }
+                
+            }
+            
+        }
+        
+    }
 
 	// ------------------End of Test Cases--------------//
 	// -------------------------------------------------//
