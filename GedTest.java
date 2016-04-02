@@ -29,6 +29,7 @@ public class GedTest {
 			US29ListDeceased();
 			US30ListMarried();
 			US38ListUpcomingBirthdays();
+			OrderedSiblingList();
 			
 			//Checks below
 			US01DateAfterCurrent();
@@ -458,6 +459,117 @@ out.print(result.toString());
         }
         
     }
+    
+    
+    public static void OrderedSiblingList(){
+        
+    	   List<String> doneIds = new ArrayList<>();
+        List<IndividualRecord> sortedRecords = new ArrayList<>();
+        List<Integer> sortedages = new ArrayList<>();
+        int idsCount=0;
+        
+        System.out.println("\n\n\n\n\n");
+        for(int i=0;i< handler.indiRecords.size(); i++){
+            
+            for(int j =0; j< handler.indiRecords.size();j++){
+                if(handler.indiRecords.get(i).famc != null && handler.indiRecords.get(j).famc != null){
+                    if(handler.indiRecords.get(i).famc.equals(handler.indiRecords.get(j).famc) ){
+                        
+                        if(checkIfIdalreadyExist(handler.indiRecords.get(i).famc, doneIds) == true){
+                            String s= handler.indiRecords.get(j).birthDate;
+                            String[] tokens = s.split(" ");
+                            int test=0;
+                            for (String t : tokens)
+                            {
+                                
+                                if(test==2){
+                                    int year = Integer.parseInt(t);
+                                    int age = 2016 - year;
+                                 
+                                    sortedages.add(age);
+                                }
+                                test++;
+                            } // for loop ends here
+                            
+                            if(handler.indiRecords.get(i).name != handler.indiRecords.get(j).name)
+                                System.out.println(" ");
+                            sortedRecords.add(handler.indiRecords.get(j));
+                            
+                        } // if checkIdalreadyExist  ends here
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            
+            
+            if(sortedRecords.size() >0){
+                
+                for(int g=0; g<sortedages.size();g++){
+                    for(int f=0; f<sortedages.size();f++){
+                        
+                        if((f+1) < sortedages.size()){
+                            if(sortedages.get(f) < sortedages.get(f+1) ){
+                                
+                                int tempage = sortedages.get(f);
+                                sortedages.set(f, sortedages.get(f+1));
+                                sortedages.set((f+1), tempage);
+                                
+                                
+                                IndividualRecord temprecord = sortedRecords.get(f);
+                                sortedRecords.set(f, sortedRecords.get(f+1));
+                                sortedRecords.set((f+1), temprecord);
+                            }
+                            
+                        } // 2nd for loop ends here
+                    }
+                }
+                
+                
+                System.out.println("\n\nThe Children in the family ID:  "+ sortedRecords.get(0).famc+ "  are listed below according to there age:\n");
+                for(int s=0;s<sortedRecords.size();s++){
+                    
+                    System.out.println(sortedRecords.get(s).name +" with id "+ sortedRecords.get(s).id +" is "+ sortedages.get(s)+"  "+"years old");
+                    
+                    
+                }
+                
+                sortedages.clear();
+                sortedRecords.clear();
+                
+            }
+            
+            if(handler.indiRecords.get(i).famc !=null){
+                
+                if(checkIfIdalreadyExist(handler.indiRecords.get(i).famc, doneIds) == true){
+                    doneIds.add(handler.indiRecords.get(i).famc) ;
+                }
+            }
+            
+            
+            
+            
+        }
+        
+        
+        
+    }
+    
+    public static boolean checkIfIdalreadyExist(String newId , List<String> completeList){
+        
+    	   for(int x=0;x<completeList.size();x++){
+               if(newId.equals(completeList.get(x))){
+                   
+                   return false;
+               }
+               
+           }
+    	   
+    	   return true;    
+    }// //OrderedSiblingList ends here
+    
 
 	// ------------------End of Test Cases--------------//
 	// -------------------------------------------------//
