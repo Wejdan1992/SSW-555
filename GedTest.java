@@ -39,6 +39,8 @@ public class GedTest {
 			US10Marriage();
 			US12parentsNotTooOld();
 			US15fewerThan15Siblings();
+			CheckHusbandMale();
+			CheckWifeFemale();
 			
 			// ---------------------------------------------//
 			System.out.println("Done .. the result in output.txt");
