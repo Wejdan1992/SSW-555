@@ -407,7 +407,7 @@ out.print(result.toString());
 		out.println(result.toString());
 	}
 	
-	////////////////////////////////////////////////////////
+	//US 21 part 1
 	public static void CheckHusbandMale(){
         System.out.println(" *********************** Check the Husband Gender ***************");
         
@@ -433,7 +433,7 @@ out.print(result.toString());
         }
         
     }
-    
+    //US 21 part 2
     public static void CheckWifeFemale(){
         System.out.println(" *********************** Check the Wife Gender ******************");
         
@@ -460,7 +460,7 @@ out.print(result.toString());
         
     }
     
-    
+    //US28
     public static void OrderedSiblingList(){
         
     	   List<String> doneIds = new ArrayList<>();
