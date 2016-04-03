@@ -164,6 +164,7 @@ public class GedTest {
 	// should not be after the current date
 	//owner: Philip
 	public static void US01DateAfterCurrent() {
+		out.println("---------------------------------------------------------------------------------------------");
 		out.println("------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------");
 		StringBuilder result = new StringBuilder();
 		Calendar today = Calendar.getInstance();
@@ -467,8 +468,8 @@ out.print(result.toString());
         List<IndividualRecord> sortedRecords = new ArrayList<>();
         List<Integer> sortedages = new ArrayList<>();
         int idsCount=0;
-        
-        out.println("\n***************************************************************************");
+        out.println("------------------------------------------------------------------------------------");
+        out.println("\n************(--Ordered Sibling list will be printed for each family--)************");
         for(int i=0;i< handler.indiRecords.size(); i++){
             
             for(int j =0; j< handler.indiRecords.size();j++){
