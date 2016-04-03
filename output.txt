@@ -135,8 +135,8 @@ Mike /Smith/ with id 11 is 22  years old
  
 *--------The Children in the family ID:  @F8@  are listed below according to there age:
 Tyrion /Lannister/ with id 16 is 11  years old
-Cersei /Lannister/ with id 19 is 1  years old
-Jamie /Lannister/ with id 20 is 0  years old
+Jamie /Lannister/ with id 20 is 1  years old
+Cersei /Lannister/ with id 19 is 0  years old
  
  
  
@@ -172,6 +172,8 @@ Alexander Obama /Obama/ with id 39 is 4  years old
 -------------------------------------------------------------------------------------------------
 ------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------
 ------US02 Check that birth should occur before marriage:------
+ErrorUS02 : Birth occured after marriage
+Name:Cersei /Lannister/ is born after marriage! Birth: 22 Mar 2016 Marriage: 01 Jan 2016
 ------US03 Check that death doesn't happen before birth:------
 ErrorUS03 : Check to make sure person is not dead before birth
 Name:Sally /Lyman/ died before their birth! Birth: 01 Jan 1980 Death: 03 Jan 1978
@@ -191,7 +193,7 @@ This individual age is more than 150
 ErrorUS10 : This individual is less than 14 years old and married
 Name:Tyrion /Lannister/ Birth: 02 Jan 2005
 ErrorUS10 : This individual is less than 14 years old and married
-Name:Cersei /Lannister/ Birth: 22 Mar 2015
+Name:Cersei /Lannister/ Birth: 22 Mar 2016
 ----US 12Check the difference in age between parents and childeren :----
 33 Cases(s) Founded:
 
