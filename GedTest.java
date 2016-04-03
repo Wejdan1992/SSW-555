@@ -409,7 +409,7 @@ out.print(result.toString());
 	
 	//US 21 part 1
 	public static void CheckHusbandMale(){
-        System.out.println(" *********************** Check the Husband Gender ***************");
+        out.println(" *********************** Check the Husband Gender ***************");
         
         for(FamilyRecord ftemp : handler.famRecords)
         {
@@ -424,7 +424,7 @@ out.print(result.toString());
                     
                     
                     
-                    System.out.println("Husband with Id " + ftemp.husbandId + " is not a male ");
+                    out.println("Husband with Id " + ftemp.husbandId + " is not a male ");
                     break;
                 }
                 
@@ -435,7 +435,7 @@ out.print(result.toString());
     }
     //US 21 part 2
     public static void CheckWifeFemale(){
-        System.out.println(" *********************** Check the Wife Gender ******************");
+        out.println(" *********************** Check the Wife Gender ******************");
         
         for(FamilyRecord ftemp : handler.famRecords)
         {
@@ -450,7 +450,7 @@ out.print(result.toString());
                     
                     
                     
-                    System.out.println("Wife with Id " + ftemp.wifeId + " is not a fmale ");
+                    out.println("Wife with Id " + ftemp.wifeId + " is not a fmale ");
                     break;
                 }
                 
@@ -468,7 +468,7 @@ out.print(result.toString());
         List<Integer> sortedages = new ArrayList<>();
         int idsCount=0;
         
-        System.out.println("\n***************************************************************************");
+        out.println("\n***************************************************************************");
         for(int i=0;i< handler.indiRecords.size(); i++){
             
             for(int j =0; j< handler.indiRecords.size();j++){
@@ -492,7 +492,7 @@ out.print(result.toString());
                             } // for loop ends here
                             
                             if(handler.indiRecords.get(i).name != handler.indiRecords.get(j).name)
-                                System.out.println(" ");
+                                out.println(" ");
                             sortedRecords.add(handler.indiRecords.get(j));
                             
                         } // if checkIdalreadyExist  ends here
@@ -528,10 +528,10 @@ out.print(result.toString());
                 }
                 
                 
-                System.out.println("*--------The Children in the family ID:  "+ sortedRecords.get(0).famc+ "  are listed below according to there age:\n");
+                out.println("*--------The Children in the family ID:  "+ sortedRecords.get(0).famc+ "  are listed below according to there age:\n");
                 for(int s=0;s<sortedRecords.size();s++){
                     
-                    System.out.println(sortedRecords.get(s).name +" with id "+ sortedRecords.get(s).id +" is "+ sortedages.get(s)+"  "+"years old");
+                    out.println(sortedRecords.get(s).name +" with id "+ sortedRecords.get(s).id +" is "+ sortedages.get(s)+"  "+"years old");
                     
                     
                 }
