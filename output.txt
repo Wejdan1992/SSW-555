@@ -1,19 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Wejdan1992
- Unwatch 3
-  Star 0
-  Fork 2 Wejdan1992/SSW-555
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs  Settings
-Tree: dd0b871813 Find file Copy pathSSW-555/output.txt
-dd0b871  18 days ago
-@falturba falturba output
-2 contributors @falturba @Wejdan1992
-RawBlameHistory     203 lines (166 sloc)  9.88 KB
+
 Individuals in the File:
 ID:1   Alex /Smith/
 ID:2   Jhon /Smith/
