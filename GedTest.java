@@ -44,6 +44,8 @@ public class GedTest {
 			US15fewerThan15Siblings();
 			CheckHusbandMale();
 			CheckWifeFemale();
+			checkMaleLastNames();
+			checkSiblingsMarriage();
 
 			// ---------------------------------------------//
 			System.out.println("Done .. the result in output.txt");
@@ -66,8 +68,8 @@ public class GedTest {
 		out.println("Families in the File:");
 		for (FamilyRecord temp : handler.famRecords) {
 			out.println("Family ID:" + temp.familyId + "| Husband ID:" + temp.husbandId + " Name:"
-					+ handler.getIndiById(temp.husbandId).name + "| Wife ID:" + temp.wifeId + " Name:"
-					+ handler.getIndiById(temp.wifeId).name);
+				+ handler.getIndiById(temp.husbandId).name + "| Wife ID:" + temp.wifeId + " Name:"
+				+ handler.getIndiById(temp.wifeId).name);
 		}
 	}
 
@@ -121,7 +123,7 @@ public class GedTest {
 				if (temp.deathDate2.before(temp.birthDate2)) {
 					out.println("ErrorUS03 : Check to make sure person is not dead before birth");
 					out.println("Name:" + temp.name + " died before their birth! Birth: "
-							+ dateFormat.format(temp.birthDate2) + " Death: " + dateFormat.format(temp.deathDate2));
+						+ dateFormat.format(temp.birthDate2) + " Death: " + dateFormat.format(temp.deathDate2));
 				}
 			}
 		}
@@ -151,15 +153,15 @@ public class GedTest {
 				int birthMonth = birthdate.get(Calendar.MONTH);
 				int birthDay = birthdate.get(Calendar.DAY_OF_MONTH);
 				if (todayYear - birthYear < 14 || (todayYear - birthYear == 14 && todayMonth < birthMonth)
-						|| (todayYear - birthYear == 14 && todayMonth == birthMonth && todayDay < birthDay)) {
+					|| (todayYear - birthYear == 14 && todayMonth == birthMonth && todayDay < birthDay)) {
 					result.append("ErrorUS10 : This individual is less than 14 years old and married"
-							+ System.lineSeparator());
-					result.append("Name:" + temp.name + " Birth: " + dateFormat.format(temp.birthDate2)
-							+ System.lineSeparator());
-				}
+						+ System.lineSeparator());
+				result.append("Name:" + temp.name + " Birth: " + dateFormat.format(temp.birthDate2)
+					+ System.lineSeparator());
 			}
 		}
-		out.print(result.toString());
+	}
+	out.print(result.toString());
 	} // -End US10Marriage
 
 	// US01 Dates before current date Dates (birth, marriage, divorce, death)
@@ -181,57 +183,57 @@ public class GedTest {
 				int checkMonth = checkDate.get(Calendar.MONTH);
 				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
 				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
+					|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
 					result.append("ErrorUS01 : Birthday occurs after Today" + System.lineSeparator());
-					result.append("Name: " + temp.name + "Birthdate " + dateFormat.format(temp.birthDate2)
-							+ System.lineSeparator());
-				}
-			}
-			if (temp.deathDate2 != null) {
-				Calendar checkDate = Calendar.getInstance();
-				checkDate.setTime(temp.birthDate2);
-				int checkYear = checkDate.get(Calendar.YEAR);
-				int checkMonth = checkDate.get(Calendar.MONTH);
-				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
-					result.append("ErrorUS01 : Deathday occurs after Today" + System.lineSeparator());
-					result.append("Name: " + temp.name + "Deathday " + dateFormat.format(temp.deathDate2)
-							+ System.lineSeparator());
-				}
+				result.append("Name: " + temp.name + "Birthdate " + dateFormat.format(temp.birthDate2)
+					+ System.lineSeparator());
 			}
 		}
-		for (FamilyRecord temp : handler.famRecords) {
-			if (temp.marriageDate2 != null) {
-				Calendar checkDate = Calendar.getInstance();
-				checkDate.setTime(temp.marriageDate2);
-				int checkYear = checkDate.get(Calendar.YEAR);
-				int checkMonth = checkDate.get(Calendar.MONTH);
-				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
-					result.append("ErrorUS01 : Marriage date occurs after Today" + System.lineSeparator());
-					result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
-							+ handler.getIndiById(temp.wifeId).name + " married "
-							+ dateFormat.format(temp.marriageDate2) + System.lineSeparator());
-				}
-			}
-			if (temp.divorceDate2 != null) {
-				Calendar checkDate = Calendar.getInstance();
-				checkDate.setTime(temp.divorceDate2);
-				int checkYear = checkDate.get(Calendar.YEAR);
-				int checkMonth = checkDate.get(Calendar.MONTH);
-				int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
-				if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
-						|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
-					result.append("ErrorUS01 : Divorce date occurs after Today" + System.lineSeparator());
-					result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
-							+ handler.getIndiById(temp.wifeId).name + " divorced "
-							+ dateFormat.format(temp.divorceDate2) + System.lineSeparator());
-				}
-			}
+		if (temp.deathDate2 != null) {
+			Calendar checkDate = Calendar.getInstance();
+			checkDate.setTime(temp.birthDate2);
+			int checkYear = checkDate.get(Calendar.YEAR);
+			int checkMonth = checkDate.get(Calendar.MONTH);
+			int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
+			if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+				|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
+				result.append("ErrorUS01 : Deathday occurs after Today" + System.lineSeparator());
+			result.append("Name: " + temp.name + "Deathday " + dateFormat.format(temp.deathDate2)
+				+ System.lineSeparator());
 		}
-		out.print(result.toString());
+	}
+}
+for (FamilyRecord temp : handler.famRecords) {
+	if (temp.marriageDate2 != null) {
+		Calendar checkDate = Calendar.getInstance();
+		checkDate.setTime(temp.marriageDate2);
+		int checkYear = checkDate.get(Calendar.YEAR);
+		int checkMonth = checkDate.get(Calendar.MONTH);
+		int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
+		if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+			|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
+			result.append("ErrorUS01 : Marriage date occurs after Today" + System.lineSeparator());
+		result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
+			+ handler.getIndiById(temp.wifeId).name + " married "
+			+ dateFormat.format(temp.marriageDate2) + System.lineSeparator());
+	}
+}
+if (temp.divorceDate2 != null) {
+	Calendar checkDate = Calendar.getInstance();
+	checkDate.setTime(temp.divorceDate2);
+	int checkYear = checkDate.get(Calendar.YEAR);
+	int checkMonth = checkDate.get(Calendar.MONTH);
+	int checkDay = checkDate.get(Calendar.DAY_OF_MONTH);
+	if (todayYear < checkYear || (todayYear == checkYear && todayMonth < checkMonth)
+		|| (todayYear == checkYear && todayMonth == checkMonth && todayDay < checkDay)) {
+		result.append("ErrorUS01 : Divorce date occurs after Today" + System.lineSeparator());
+	result.append("Name: " + handler.getIndiById(temp.husbandId).name + " and "
+		+ handler.getIndiById(temp.wifeId).name + " divorced "
+		+ dateFormat.format(temp.divorceDate2) + System.lineSeparator());
+}
+}
+}
+out.print(result.toString());
 	} // -End US01DateAfterCurrent
 
 	// US02 Birth before marriage Birth should occur before marriage of an
@@ -243,15 +245,15 @@ public class GedTest {
 			if (handler.getIndiById(temp.husbandId).birthDate2 != null) {
 				if (handler.getIndiById(temp.husbandId).birthDate2.after(temp.marriageDate2)) {
 					out.println("Name:" + handler.getIndiById(temp.husbandId).name + " is born after marriage! Birth: "
-							+ dateFormat.format(handler.getIndiById(temp.husbandId).birthDate2) + " Marriage: "
-							+ dateFormat.format(temp.marriageDate2));
+						+ dateFormat.format(handler.getIndiById(temp.husbandId).birthDate2) + " Marriage: "
+						+ dateFormat.format(temp.marriageDate2));
 				}
 			}
 			if (handler.getIndiById(temp.wifeId).birthDate2 != null) {
 				if (handler.getIndiById(temp.wifeId).birthDate2.after(temp.marriageDate2)) {
 					out.println("Name:" + handler.getIndiById(temp.wifeId).name + " is born after marriage! Birth: "
-							+ dateFormat.format(handler.getIndiById(temp.wifeId).birthDate2) + " Marriage: "
-							+ dateFormat.format(temp.marriageDate2));
+						+ dateFormat.format(handler.getIndiById(temp.wifeId).birthDate2) + " Marriage: "
+						+ dateFormat.format(temp.marriageDate2));
 				}
 			}
 		}
@@ -265,15 +267,15 @@ public class GedTest {
 			if (handler.getIndiById(temp.husbandId).deathDate2 != null) {
 				if (handler.getIndiById(temp.husbandId).deathDate2.before(temp.marriageDate2)) {
 					out.println("ErrorUS09 : Name:" + handler.getIndiById(temp.husbandId).name + " is married after death! Death date: "
-							+ dateFormat.format(handler.getIndiById(temp.husbandId).deathDate2) + " Marriage: "
-							+ dateFormat.format(temp.marriageDate2));
+						+ dateFormat.format(handler.getIndiById(temp.husbandId).deathDate2) + " Marriage: "
+						+ dateFormat.format(temp.marriageDate2));
 				}
 			}
 			if (handler.getIndiById(temp.wifeId).deathDate2 != null) {
 				if (handler.getIndiById(temp.wifeId).deathDate2.before(temp.marriageDate2)) {
 					out.println("ErrorUS05 : Name:" + handler.getIndiById(temp.wifeId).name + " is married after death! Death date: "
-							+ dateFormat.format(handler.getIndiById(temp.wifeId).deathDate2) + " Marriage: "
-							+ dateFormat.format(temp.marriageDate2));
+						+ dateFormat.format(handler.getIndiById(temp.wifeId).deathDate2) + " Marriage: "
+						+ dateFormat.format(temp.marriageDate2));
 				}
 			}
 		}
@@ -300,8 +302,8 @@ public class GedTest {
 						diffMonths = diffMonths + (diffYears * 12);
 						if (diffMonths < 9) {
 							result.append("ErrorUS09 : Father's Name: " + father.name + " died: " + dateFormat.format(father.deathDate2) 
-									+ " Child's Name: " + child.name + " birth: " + dateFormat.format(child.birthDate2)
-									+ System.lineSeparator());
+								+ " Child's Name: " + child.name + " birth: " + dateFormat.format(child.birthDate2)
+								+ System.lineSeparator());
 						}
 					}
 				}
@@ -320,8 +322,8 @@ public class GedTest {
 						diffDays = (diffMonths + (diffYears * 12) * 30) + diffDays;
 						if (diffDays < 1) {
 							result.append("ErrorUS09 : Mother's Name: " + mother.name + " died: " + dateFormat.format(mother.deathDate2) 
-									+ " Child's Name: " + child.name + " birth: " + dateFormat.format(child.birthDate2)
-									+ System.lineSeparator());
+								+ " Child's Name: " + child.name + " birth: " + dateFormat.format(child.birthDate2)
+								+ System.lineSeparator());
 						}
 					}
 				}
@@ -344,9 +346,9 @@ public class GedTest {
 					count++;
 					result.append("Case " + count + System.lineSeparator());
 					result.append("Husband:" + handler.getIndiById(temp.husbandId).name + " | Wife:"
-							+ handler.getIndiById(temp.wifeId).name + System.lineSeparator());
+						+ handler.getIndiById(temp.wifeId).name + System.lineSeparator());
 					result.append("Marriage Date:" + dateFormat.format(temp.marriageDate2) + " | Divorce Date:"
-							+ dateFormat.format(temp.divorceDate2) + System.lineSeparator());
+						+ dateFormat.format(temp.divorceDate2) + System.lineSeparator());
 
 				}
 			}
@@ -423,18 +425,18 @@ public class GedTest {
 						if ((husbandAge - childAge) >= 80) {
 							count++;
 							result.append("Case " + count + ": Father is " + (husbandAge - childAge)
-									+ " older than his child" + "| Father's Name:"
-									+ handler.getIndiById(temp.husbandId).name + "| Father's ID:" + temp.husbandId
-									+ " || Child's Name:" + handler.getIndiByIdString(childId).name + " | Child's ID:"
-									+ childId + System.lineSeparator() + System.lineSeparator());
+								+ " older than his child" + "| Father's Name:"
+								+ handler.getIndiById(temp.husbandId).name + "| Father's ID:" + temp.husbandId
+								+ " || Child's Name:" + handler.getIndiByIdString(childId).name + " | Child's ID:"
+								+ childId + System.lineSeparator() + System.lineSeparator());
 						}
 						if ((wifeAge - childAge) >= 60) {
 							count++;
 							result.append("Case " + count + ": Mother is " + (wifeAge - childAge)
-									+ " older than her child" + "| Motehr's Name:"
-									+ handler.getIndiById(temp.wifeId).name + "| Mother's ID:" + temp.wifeId
-									+ " || Child's Name:" + handler.getIndiByIdString(childId).name + " | Child's ID:"
-									+ childId + System.lineSeparator() + System.lineSeparator());
+								+ " older than her child" + "| Motehr's Name:"
+								+ handler.getIndiById(temp.wifeId).name + "| Mother's ID:" + temp.wifeId
+								+ " || Child's Name:" + handler.getIndiByIdString(childId).name + " | Child's ID:"
+								+ childId + System.lineSeparator() + System.lineSeparator());
 						}
 					}
 				}
@@ -569,11 +571,11 @@ public class GedTest {
 				}
 
 				out.println("*--------The Children in the family ID:  " + sortedRecords.get(0).famc
-						+ "  are listed below according to there age:\n");
+					+ "  are listed below according to there age:\n");
 				for (int s = 0; s < sortedRecords.size(); s++) {
 
 					out.println(sortedRecords.get(s).name + " with id " + sortedRecords.get(s).id + " is "
-							+ sortedages.get(s) + "  " + "years old");
+						+ sortedages.get(s) + "  " + "years old");
 
 				}
 
@@ -592,6 +594,63 @@ public class GedTest {
 		}
 
 	}
+	//US16
+	//owner:Fawaz
+	public static void checkMaleLastNames()
+	{
+		out.println("----------------Checking Male Last Names---------");
+		int count =0;
+		StringBuilder result = new StringBuilder();
+
+		for(FamilyRecord temp : handler.famRecords)
+		{
+			String fullName = handler.getIndiById(temp.husbandId).name;
+			String[] firstAndLast = fullName.split(" ");
+			if(firstAndLast.length > 1)
+			{
+				for(String child:temp.childerenList)
+				{
+					IndividualRecord childRecord = handler.getIndiByIdString(child);
+					if(childRecord.sex.equals("M"))
+					{
+						String childFullName = childRecord.name;
+						String[] childFirstAndLast = childFullName.split(" ");
+						if(childFirstAndLast.length > 1)
+						{
+							if(!firstAndLast[1].equals(childFirstAndLast[1]))
+							{
+								count++;
+								result.append("Case "+count+": Family's Last Name:"+firstAndLast[1]+" | Male Child Full Name: "+childFullName+System.lineSeparator());
+							}
+						}
+					}
+				}
+			}
+		}
+		out.println(count+ " Cases Found:");
+		out.println(result.toString());
+	}
+	public static void checkSiblingsMarriage()
+	{
+		out.println("--------Check Marriage between siblings-------");
+		int count =0;
+		StringBuilder result=new StringBuilder();
+		for(FamilyRecord temp:handler.famRecords)
+		{
+			IndividualRecord husband = handler.getIndiById(temp.husbandId);
+			IndividualRecord wife = handler.getIndiById(temp.wifeId);
+			if(husband.famc != null && wife.famc !=null)
+			{
+				if(husband.famc.equals(wife.famc))
+				{
+					count++;
+					result.append("Case "+count+": Husband:"+husband.name+"| Wife:"+wife.name+System.lineSeparator());
+				}
+			}
+		}
+		out.println(count+ " Cases Found:");
+		out.println(result.toString());
+	}
 
 	public static boolean checkIfIdalreadyExist(String newId, List<String> completeList) {
 
@@ -605,6 +664,7 @@ public class GedTest {
 
 		return true;
 	}// //OrderedSiblingList ends here
+
 
 	// ------------------End of Test Cases--------------//
 	// -------------------------------------------------//

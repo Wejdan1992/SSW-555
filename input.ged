@@ -217,7 +217,7 @@
 2 DATE 23 MAR 2015
 1 FAMC @F8@
 0 @I22@ INDI
-1 NAME barack Obama /Obama/
+1 NAME barack /Obama/
 2 GIVN barack Obama
 2 SURN Obama
 1 SEX M
@@ -225,7 +225,7 @@
 2 DATE 2 MAY 1899
 1 FAMS @F10@
 0 @I23@ INDI
-1 NAME Michelle Obama /Obama/
+1 NAME Michelle /Obama/
 2 GIVN Michelle Obama
 2 SURN Obama
 1 SEX F
@@ -233,7 +233,7 @@
 2 DATE 2 MAY 1900
 1 FAMS @F10@
 0 @I24@ INDI
-1 NAME Malia Obama /Obama/
+1 NAME Malia /Obama/
 2 GIVN Malia Obama
 2 SURN Obama
 1 SEX F
@@ -241,7 +241,7 @@
 2 DATE 2 MAY 1998
 1 FAMC @F10@
 0 @I25@ INDI
-1 NAME Natasha Obama /Obama/
+1 NAME Natasha /Obama/
 2 GIVN Natasha Obama
 2 SURN Obama
 1 SEX F
@@ -249,7 +249,7 @@
 2 DATE 2 MAY 2001
 1 FAMC @F10@
 0 @I26@ INDI
-1 NAME John Obama /Obama/
+1 NAME John /Obama/
 2 GIVN John Obama
 2 SURN Obama
 1 SEX M
@@ -257,15 +257,16 @@
 2 DATE 2 MAY 2002
 1 FAMC @F10@
 0 @I27@ INDI
-1 NAME Nawal Obama /Obama/
+1 NAME Nawal /Obama/
 2 GIVN Nawal Obama
 2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1985
 1 FAMC @F10@
+1 FAMS @F11@
 0 @I28@ INDI
-1 NAME Hend Obama /Obama/
+1 NAME Hend /Obama/
 2 GIVN Hend Obama
 2 SURN Obama
 1 SEX F
@@ -273,15 +274,16 @@
 2 DATE 2 MAY 2003
 1 FAMC @F10@
 0 @I29@ INDI
-1 NAME Adam Obama /Obama/
+1 NAME Adam /Obama/
 2 GIVN Adam Obama
 2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 1991
 1 FAMC @F10@
+1 FAMS @F11@
 0 @I30@ INDI
-1 NAME Adam Obama /Obama/
+1 NAME Adam /Obama/
 2 GIVN Adam Obama
 2 SURN Obama
 1 SEX M
@@ -289,7 +291,7 @@
 2 DATE 2 MAY 1989
 1 FAMC @F10@
 0 @I31@ INDI
-1 NAME James Obama /Obama/
+1 NAME James /Obama/
 2 GIVN James Obama
 2 SURN Obama
 1 SEX M
@@ -297,7 +299,7 @@
 2 DATE 2 MAY 1990
 1 FAMC @F10@
 0 @I32@ INDI
-1 NAME Sarah Obama /Obama/
+1 NAME Sarah /Obama/
 2 GIVN Sarah Obama
 2 SURN Obama
 1 SEX F
@@ -305,7 +307,7 @@
 2 DATE 2 MAY 1992
 1 FAMC @F10@
 0 @I33@ INDI
-1 NAME Martha Obama /Obama/
+1 NAME Martha /Obama/
 2 GIVN Martha Obama
 2 SURN Obama
 1 SEX F
@@ -313,7 +315,7 @@
 2 DATE 2 MAY 2010
 1 FAMC @F10@
 0 @I34@ INDI
-1 NAME Marry Obama /Obama/
+1 NAME Marry /Obama/
 2 GIVN Marry Obama
 2 SURN Obama
 1 SEX F
@@ -321,7 +323,7 @@
 2 DATE 2 MAY 1999
 1 FAMC @F10@
 0 @I35@ INDI
-1 NAME Henry Obama /Obama/
+1 NAME Henry /Obama/
 2 GIVN Henry Obama
 2 SURN Obama
 1 SEX M
@@ -329,7 +331,7 @@
 2 DATE 2 MAY 2009
 1 FAMC @F10@
 0 @I36@ INDI
-1 NAME Caroline Obama /Obama/
+1 NAME Caroline /Obama/
 2 GIVN Caroline Obama
 2 SURN Obama
 1 SEX F
@@ -337,15 +339,15 @@
 2 DATE 2 MAY 2006
 1 FAMC @F10@
 0 @I37@ INDI
-1 NAME David Obama /Obama/
-2 GIVN David Obama
-2 SURN Obama
+1 NAME David /Oba/
+2 GIVN David Oba
+2 SURN Oba
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 2005
 1 FAMC @F10@
 0 @I38@ INDI
-1 NAME Julia Obama /Obama/
+1 NAME Julia /Obama/
 2 GIVN Julia Obama
 2 SURN Obama
 1 SEX F
@@ -353,7 +355,7 @@
 2 DATE 2 MAY 2000
 1 FAMC @F10@
 0 @I39@ INDI
-1 NAME Alexander Obama /Obama/
+1 NAME Alexander /Oba/
 2 GIVN Alexander Obama
 2 SURN Obama
 1 SEX M
@@ -475,4 +477,9 @@
 1 MARR
 2 DATE 1 JAN 1970
 1 _CURRENT Y
+0 @F11@ FAM
+1 HUSB @I29@
+1 WIFE @I27@
+1 MARR
+2 DATE 1 JAN 1990
 0 TRLR
