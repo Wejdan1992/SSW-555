@@ -1,8 +1,8 @@
 0 HEAD
 1 SOUR Family Echo
 2 WWW http://www.familyecho.com/
-1 FILE Family 2
-1 DATE 14 MAR 2016
+1 FILE My Family
+1 DATE 5 APR 2016
 1 DEST ANSTFILE
 1 GEDC
 2 VERS 5.5.1
@@ -181,6 +181,10 @@
 2 SURN Lannister
 2 _MARNM Lannister
 1 SEX F
+1 BIRT
+2 DATE 1 JAN 1980
+1 DEAT Y
+2 DATE 1 JAN 2005
 1 FAMS @F8@
 0 @I19@ INDI
 1 NAME Cersei /Lannister/
@@ -193,17 +197,8 @@
 1 FAMS @F9@
 1 FAMC @F8@
 0 @I20@ INDI
-1 NAME Jamie /Lannister/
-2 GIVN Jamie
-2 SURN Lannister
-2 _MARNM Lannister
-1 SEX M
-1 BIRT
-2 DATE 23 MAR 2015
-1 FAMC @F8@
-0 @I21@ INDI
-1 NAME Robert Baratheon /Baratheon/
-2 GIVN Robert Baratheon
+1 NAME Robert /Baratheon/
+2 GIVN Robert
 2 SURN Baratheon
 2 _MARNM Baratheon
 1 SEX M
@@ -212,114 +207,168 @@
 1 DEAT Y
 2 DATE 9 JUN 2016
 1 FAMS @F9@
+0 @I21@ INDI
+1 NAME Jamie /Lannister/
+2 GIVN Jamie
+2 SURN Lannister
+2 _MARNM Lannister
+1 SEX M
+1 BIRT
+2 DATE 23 MAR 2015
+1 FAMC @F8@
 0 @I22@ INDI
 1 NAME barack Obama /Obama/
+2 GIVN barack Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 1899
 1 FAMS @F10@
 0 @I23@ INDI
 1 NAME Michelle Obama /Obama/
+2 GIVN Michelle Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1900
 1 FAMS @F10@
 0 @I24@ INDI
-1 NAME  Malia Obama /Obama/
+1 NAME Malia Obama /Obama/
+2 GIVN Malia Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1998
 1 FAMC @F10@
 0 @I25@ INDI
 1 NAME Natasha Obama /Obama/
+2 GIVN Natasha Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 2001
 1 FAMC @F10@
 0 @I26@ INDI
 1 NAME John Obama /Obama/
+2 GIVN John Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 2002
 1 FAMC @F10@
 0 @I27@ INDI
 1 NAME Nawal Obama /Obama/
+2 GIVN Nawal Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1985
 1 FAMC @F10@
 0 @I28@ INDI
 1 NAME Hend Obama /Obama/
+2 GIVN Hend Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 2003
 1 FAMC @F10@
 0 @I29@ INDI
 1 NAME Adam Obama /Obama/
+2 GIVN Adam Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 1991
 1 FAMC @F10@
 0 @I30@ INDI
 1 NAME Adam Obama /Obama/
+2 GIVN Adam Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 1989
 1 FAMC @F10@
 0 @I31@ INDI
 1 NAME James Obama /Obama/
+2 GIVN James Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 1990
 1 FAMC @F10@
 0 @I32@ INDI
 1 NAME Sarah Obama /Obama/
+2 GIVN Sarah Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1992
 1 FAMC @F10@
 0 @I33@ INDI
 1 NAME Martha Obama /Obama/
+2 GIVN Martha Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 2010
 1 FAMC @F10@
 0 @I34@ INDI
 1 NAME Marry Obama /Obama/
+2 GIVN Marry Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 1999
 1 FAMC @F10@
 0 @I35@ INDI
 1 NAME Henry Obama /Obama/
+2 GIVN Henry Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 2009
 1 FAMC @F10@
 0 @I36@ INDI
 1 NAME Caroline Obama /Obama/
+2 GIVN Caroline Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 2006
 1 FAMC @F10@
 0 @I37@ INDI
 1 NAME David Obama /Obama/
+2 GIVN David Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 2005
 1 FAMC @F10@
 0 @I38@ INDI
 1 NAME Julia Obama /Obama/
+2 GIVN Julia Obama
+2 SURN Obama
 1 SEX F
 1 BIRT
 2 DATE 2 MAY 2000
 1 FAMC @F10@
 0 @I39@ INDI
 1 NAME Alexander Obama /Obama/
+2 GIVN Alexander Obama
+2 SURN Obama
 1 SEX M
 1 BIRT
 2 DATE 2 MAY 2012
 1 FAMC @F10@
+0 @I40@ INDI
+1 NAME Joffrey /Baratheon/
+2 GIVN Joffrey
+2 SURN Baratheon
+2 _MARNM Baratheon
+1 SEX M
+1 BIRT
+2 DATE 1 MAR 2016
+1 FAMC @F9@
 0 @F1@ FAM
 1 HUSB @I2@
 1 WIFE @I4@
@@ -350,6 +399,14 @@
 1 EVEN
 2 TYPE Ending
 1 _CURRENT N
+0 @F5@ FAM
+1 HUSB @I7@
+1 WIFE @I6@
+1 CHIL @I8@
+1 MARR
+2 DATE 12 MAR 1975
+2 PLAC Boston
+1 _CURRENT Y
 0 @F4@ FAM
 1 HUSB @I12@
 1 WIFE @I13@
@@ -359,14 +416,6 @@
 1 MARR
 2 DATE 3 JAN 1975
 2 PLAC New York
-1 _CURRENT Y
-0 @F5@ FAM
-1 HUSB @I7@
-1 WIFE @I6@
-1 CHIL @I8@
-1 MARR
-2 DATE 12 MAR 1975
-2 PLAC Boston
 1 _CURRENT Y
 0 @F6@ FAM
 1 HUSB @I9@
@@ -390,11 +439,14 @@
 1 WIFE @I18@
 1 CHIL @I16@
 1 CHIL @I19@
-1 CHIL @I20@
+1 CHIL @I21@
+1 MARR
+2 DATE 10 MAY 2006
 1 _CURRENT Y
 0 @F9@ FAM
-1 HUSB @I21@
+1 HUSB @I20@
 1 WIFE @I19@
+1 CHIL @I40@
 1 MARR
 2 DATE 1 JAN 2016
 2 PLAC New york
@@ -422,4 +474,5 @@
 1 CHIL @I39@
 1 MARR
 2 DATE 1 JAN 1970
+1 _CURRENT Y
 0 TRLR

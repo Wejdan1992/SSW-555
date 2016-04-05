@@ -18,11 +18,11 @@ ID:16   Tyrion /Lannister/
 ID:17   Tywin /Lannister/
 ID:18   Joanna /Lannister/
 ID:19   Cersei /Lannister/
-ID:20   Jamie /Lannister/
-ID:21   Robert Baratheon /Baratheon/
+ID:20   Robert /Baratheon/
+ID:21   Jamie /Lannister/
 ID:22   barack Obama /Obama/
 ID:23   Michelle Obama /Obama/
-ID:24    Malia Obama /Obama/
+ID:24   Malia Obama /Obama/
 ID:25   Natasha Obama /Obama/
 ID:26   John Obama /Obama/
 ID:27   Nawal Obama /Obama/
@@ -38,6 +38,7 @@ ID:36   Caroline Obama /Obama/
 ID:37   David Obama /Obama/
 ID:38   Julia Obama /Obama/
 ID:39   Alexander Obama /Obama/
+ID:40   Joffrey /Baratheon/
 _____________________________________________________________________
 Families in the File:
 Family ID:1| Husband ID:2 Name:Jhon /Smith/| Wife ID:4 Name:Sara /Lyman/
@@ -48,13 +49,13 @@ Family ID:5| Husband ID:7 Name:Jacob /Jones/| Wife ID:6 Name:Ruby /Williams/
 Family ID:6| Husband ID:9 Name:Kyle /Jhonson/| Wife ID:8 Name:Alice /Jones/
 Family ID:7| Husband ID:16 Name:Tyrion /Lannister/| Wife ID:15 Name:Samantha /Lyman/
 Family ID:8| Husband ID:17 Name:Tywin /Lannister/| Wife ID:18 Name:Joanna /Lannister/
-Family ID:9| Husband ID:21 Name:Robert Baratheon /Baratheon/| Wife ID:19 Name:Cersei /Lannister/
+Family ID:9| Husband ID:20 Name:Robert /Baratheon/| Wife ID:19 Name:Cersei /Lannister/
 Family ID:10| Husband ID:22 Name:barack Obama /Obama/| Wife ID:23 Name:Michelle Obama /Obama/
 ------------ US31 List the Living Single in the family:-----------
 ID:10   Julia /Johnson/
 ID:11   Mike /Smith/
-ID:20   Jamie /Lannister/
-ID:24    Malia Obama /Obama/
+ID:21   Jamie /Lannister/
+ID:24   Malia Obama /Obama/
 ID:25   Natasha Obama /Obama/
 ID:26   John Obama /Obama/
 ID:27   Nawal Obama /Obama/
@@ -70,11 +71,13 @@ ID:36   Caroline Obama /Obama/
 ID:37   David Obama /Obama/
 ID:38   Julia Obama /Obama/
 ID:39   Alexander Obama /Obama/
+ID:40   Joffrey /Baratheon/
 --------------List the Deceased in the Family :-------------
 ID:1   Alex /Smith/
 ID:5   Ethan /Smith/
 ID:14   Sally /Lyman/
-ID:21   Robert Baratheon /Baratheon/
+ID:18   Joanna /Lannister/
+ID:20   Robert /Baratheon/
 --------------List the Living Married in the Family:-------------
 ID:2   Jhon /Smith/
 ID:3   Jessica /Palmer/
@@ -88,54 +91,59 @@ ID:13   MarySara /Lyman/
 ID:15   Samantha /Lyman/
 ID:16   Tyrion /Lannister/
 ID:17   Tywin /Lannister/
-ID:18   Joanna /Lannister/
 ID:19   Cersei /Lannister/
 ID:22   barack Obama /Obama/
 ID:23   Michelle Obama /Obama/
 ------List all upcoming birthdays:------
-1. Name:Kyle /Jhonson/ | Birth Day:03 Apr 1973
-2. Name:barack Obama /Obama/ | Birth Day:02 May 1899
-3. Name:Michelle Obama /Obama/ | Birth Day:02 May 1900
-4. Name: Malia Obama /Obama/ | Birth Day:02 May 1998
-5. Name:Natasha Obama /Obama/ | Birth Day:02 May 2001
-6. Name:John Obama /Obama/ | Birth Day:02 May 2002
-7. Name:Nawal Obama /Obama/ | Birth Day:02 May 1985
-8. Name:Hend Obama /Obama/ | Birth Day:02 May 2003
-9. Name:Adam Obama /Obama/ | Birth Day:02 May 1991
-10. Name:Adam Obama /Obama/ | Birth Day:02 May 1989
-11. Name:James Obama /Obama/ | Birth Day:02 May 1990
-12. Name:Sarah Obama /Obama/ | Birth Day:02 May 1992
-13. Name:Martha Obama /Obama/ | Birth Day:02 May 2010
-14. Name:Marry Obama /Obama/ | Birth Day:02 May 1999
-15. Name:Henry Obama /Obama/ | Birth Day:02 May 2009
-16. Name:Caroline Obama /Obama/ | Birth Day:02 May 2006
-17. Name:David Obama /Obama/ | Birth Day:02 May 2005
-18. Name:Julia Obama /Obama/ | Birth Day:02 May 2000
-19. Name:Alexander Obama /Obama/ | Birth Day:02 May 2012
+1. Name:barack Obama /Obama/ | Birth Day:02 May 1899
+2. Name:Michelle Obama /Obama/ | Birth Day:02 May 1900
+3. Name:Malia Obama /Obama/ | Birth Day:02 May 1998
+4. Name:Natasha Obama /Obama/ | Birth Day:02 May 2001
+5. Name:John Obama /Obama/ | Birth Day:02 May 2002
+6. Name:Nawal Obama /Obama/ | Birth Day:02 May 1985
+7. Name:Hend Obama /Obama/ | Birth Day:02 May 2003
+8. Name:Adam Obama /Obama/ | Birth Day:02 May 1991
+9. Name:Adam Obama /Obama/ | Birth Day:02 May 1989
+10. Name:James Obama /Obama/ | Birth Day:02 May 1990
+11. Name:Sarah Obama /Obama/ | Birth Day:02 May 1992
+12. Name:Martha Obama /Obama/ | Birth Day:02 May 2010
+13. Name:Marry Obama /Obama/ | Birth Day:02 May 1999
+14. Name:Henry Obama /Obama/ | Birth Day:02 May 2009
+15. Name:Caroline Obama /Obama/ | Birth Day:02 May 2006
+16. Name:David Obama /Obama/ | Birth Day:02 May 2005
+17. Name:Julia Obama /Obama/ | Birth Day:02 May 2000
+18. Name:Alexander Obama /Obama/ | Birth Day:02 May 2012
 ------------------------------------------------------------------------------------
 
 ************(--Ordered Sibling list will be printed for each family--)************
 *--------The Children in the family ID:  @F1@  are listed below according to there age:
+
 Alex /Smith/ with id 1 is 30  years old
 *--------The Children in the family ID:  @F3@  are listed below according to there age:
+
 Jhon /Smith/ with id 2 is 56  years old
  
  
 *--------The Children in the family ID:  @F4@  are listed below according to there age:
+
 Sara /Lyman/ with id 4 is 52  years old
 Sally /Lyman/ with id 14 is 36  years old
 Samantha /Lyman/ with id 15 is 29  years old
 *--------The Children in the family ID:  @F5@  are listed below according to there age:
+
 Alice /Jones/ with id 8 is 38  years old
 *--------The Children in the family ID:  @F6@  are listed below according to there age:
+
 Julia /Johnson/ with id 10 is 19  years old
 *--------The Children in the family ID:  @F2@  are listed below according to there age:
+
 Mike /Smith/ with id 11 is 22  years old
  
  
 *--------The Children in the family ID:  @F8@  are listed below according to there age:
+
 Tyrion /Lannister/ with id 16 is 11  years old
-Jamie /Lannister/ with id 20 is 1  years old
+Jamie /Lannister/ with id 21 is 1  years old
 Cersei /Lannister/ with id 19 is 0  years old
  
  
@@ -153,12 +161,13 @@ Cersei /Lannister/ with id 19 is 0  years old
  
  
 *--------The Children in the family ID:  @F10@  are listed below according to there age:
+
 Nawal Obama /Obama/ with id 27 is 31  years old
 Adam Obama /Obama/ with id 30 is 27  years old
 James Obama /Obama/ with id 31 is 26  years old
 Adam Obama /Obama/ with id 29 is 25  years old
 Sarah Obama /Obama/ with id 32 is 24  years old
- Malia Obama /Obama/ with id 24 is 18  years old
+Malia Obama /Obama/ with id 24 is 18  years old
 Marry Obama /Obama/ with id 34 is 17  years old
 Julia Obama /Obama/ with id 38 is 16  years old
 Natasha Obama /Obama/ with id 25 is 15  years old
@@ -169,10 +178,12 @@ Caroline Obama /Obama/ with id 36 is 10  years old
 Henry Obama /Obama/ with id 35 is 7  years old
 Martha Obama /Obama/ with id 33 is 6  years old
 Alexander Obama /Obama/ with id 39 is 4  years old
--------------------------------------------------------------------------------------------------
+*--------The Children in the family ID:  @F9@  are listed below according to there age:
+
+Joffrey /Baratheon/ with id 40 is 0  years old
+---------------------------------------------------------------------------------------------
 ------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------
 ------US02 Check that birth should occur before marriage:------
-ErrorUS02 : Birth occured after marriage
 Name:Cersei /Lannister/ is born after marriage! Birth: 22 Mar 2016 Marriage: 01 Jan 2016
 ------US03 Check that death doesn't happen before birth:------
 ErrorUS03 : Check to make sure person is not dead before birth
@@ -185,10 +196,18 @@ Marriage Date:04 May 1990 | Divorce Date:12 Mar 1984
 Case 2
 Husband:Kyle /Jhonson/ | Wife:Alice /Jones/
 Marriage Date:10 Mar 2000 | Divorce Date:01 Jan 2000
+------US05 Check that marriage should occur before death:------
+ErrorUS05 : Name:Joanna /Lannister/ is married after death! Death date: 01 Jan 2005 Marriage: 10 May 2006
 -----------Check Age Limit for Individual Here:-----------
 DOB is 01 Apr 1500
 Name :Ethan /Smith/   Age 516
 This individual age is more than 150 
+------US09 Check that birth happens before parents death:------
+ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Tyrion /Lannister/ birth: 02 Jan 2005
+ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Cersei /Lannister/ birth: 22 Mar 2016
+ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Jamie /Lannister/ birth: 23 Mar 2015
+ErrorUS09 : Father's Name: Robert /Baratheon/ died: 09 Jun 2016 Child's Name: Joffrey /Baratheon/ birth: 01 Mar 2016
+
 ------US10 Check Marriage is after 14 years old:------
 ErrorUS10 : This individual is less than 14 years old and married
 Name:Tyrion /Lannister/ Birth: 02 Jan 2005
@@ -199,9 +218,9 @@ Name:Cersei /Lannister/ Birth: 22 Mar 2016
 
 Case 1: Father is 461 older than his child| Father's Name:Ethan /Smith/| Father's ID:5 || Child's Name:Jhon /Smith/ | Child's ID:@I2@
 
-Case 2: Father is 99 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name: Malia Obama /Obama/ | Child's ID:@I24@
+Case 2: Father is 99 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Malia Obama /Obama/ | Child's ID:@I24@
 
-Case 3: Mother is 98 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name: Malia Obama /Obama/ | Child's ID:@I24@
+Case 3: Mother is 98 older than her child| Motehr's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Malia Obama /Obama/ | Child's ID:@I24@
 
 Case 4: Father is 102 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Natasha Obama /Obama/ | Child's ID:@I25@
 
