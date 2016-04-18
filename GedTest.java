@@ -32,6 +32,7 @@ public class GedTest {
 			OrderedSiblingList();
 			 ListRecentBirth();
                           ListRecentDeath();
+                          ListOrphans();
 
 			// Checks below
 			US01DateAfterCurrent();
@@ -728,6 +729,35 @@ out.print(result.toString());
                 }
             }
         }
+    }
+    //owner:Fawaz
+    //US33
+    public static void ListOrphans()
+    {
+    	out.println("----------------List All Orphans-------------------");
+    	StringBuilder result=new StringBuilder();
+    	int count=0;
+    	for(FamilyRecord temp:handler.famRecords)
+    	{
+    		IndividualRecord father = handler.getIndiById(temp.husbandId);
+    		IndividualRecord mother = handler.getIndiById(temp.wifeId);
+    		if(father.deathDate2!=null&&mother.deathDate2!=null)//both parents are dead
+    		{
+    			for(String childId:temp.childerenList)
+    			{
+    				IndividualRecord child = handler.getIndiByIdString(childId);
+    				int childAge = compare(new Date(),child.birthDate2);
+    				if(childAge<18)
+    				{
+    					count++;
+    					result.append("Case "+count+": Child's Name:"+child.name+"| Child's ID:"+child.id+System.lineSeparator());
+    				}
+
+    			}
+    		}
+    	}
+    	out.println(count+" Cases Founded:");
+    	out.println(result.toString());
     }
 
 
