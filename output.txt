@@ -96,10 +96,11 @@ ID:51   Joanna06 /Lannister/
 ID:1   Alex /Smith/
 ID:5   Ethan /Smith/
 ID:14   Sally /Lyman/
+ID:16   Tyrion /Lannister/
 ID:18   Joanna /Lannister/
 ID:20   Robert /Baratheon/
-ID:22   barack /Obama/
-ID:23   Michelle /Obama/
+ID:22   barack Obama /Obama/
+ID:23   Michelle Obama /Obama/
 --------------List the Living Married in the Family:-------------
 ID:2   Jhon /Smith/
 ID:3   Jessica /Palmer/
@@ -111,48 +112,25 @@ ID:9   Kyle /Jhonson/
 ID:12   Fester /Lyman/
 ID:13   MarySara /Lyman/
 ID:15   Samantha /Lyman/
-ID:16   Tyrion /Lannister/
 ID:17   Tywin /Lannister/
 ID:19   Cersei /Lannister/
-<<<<<<< HEAD
-ID:27   Nawal /Obama/
-ID:29   Adam /Obama/
-------List all upcoming birthdays:------
-1. Name:Malia /Obama/ | Birth Day:02 May 1998
-2. Name:Natasha /Obama/ | Birth Day:02 May 2001
-3. Name:John /Obama/ | Birth Day:02 May 2002
-4. Name:Hend /Obama/ | Birth Day:02 May 2003
-5. Name:Adam /Obama/ | Birth Day:02 May 1991
-6. Name:Adam /Obama/ | Birth Day:02 May 1989
-7. Name:James /Obama/ | Birth Day:02 May 1990
-8. Name:Martha /Obama/ | Birth Day:02 May 2010
-9. Name:Caroline /Obama/ | Birth Day:02 May 2006
-10. Name:David /Oba/ | Birth Day:02 May 2005
-11. Name:Julia /Obama/ | Birth Day:02 May 2000
-12. Name:Alexander /Oba/ | Birth Day:02 May 2012
-=======
-ID:22   barack Obama /Obama/
-ID:23   Michelle Obama /Obama/
 ID:27   Nawal Obama /Obama/
 ID:28   Adam Obama /Obama/
 ID:41   Tommen /Lannister/
 ID:42   Sansa /Stark/
 ID:43   Margaery /Tyrell/
 ------List all upcoming birthdays:------
-1. Name:barack Obama /Obama/ | Birth Day:02 May 1899
-2. Name:Michelle Obama /Obama/ | Birth Day:02 May 1900
-3. Name:Malia Obama /Obama/ | Birth Day:02 May 1998
-4. Name:John Obama /Obama/ | Birth Day:02 May 2002
-5. Name:Adam Obama /Obama/ | Birth Day:02 May 1991
-6. Name:Hend Obama /Obama/ | Birth Day:02 May 2003
-7. Name:Adam Obama /Obama/ | Birth Day:02 May 1989
-8. Name:James Obama /Obama/ | Birth Day:02 May 1990
-9. Name:Martha Obama /Obama/ | Birth Day:02 May 2010
-10. Name:Caroline Obama /Obama/ | Birth Day:02 May 2006
-11. Name:David Oba /Oba/ | Birth Day:02 May 2005
-12. Name:Julia Obama /Obama/ | Birth Day:02 May 2000
-13. Name:Alexander Obama /Obama/ | Birth Day:02 May 2012
->>>>>>> origin/master
+1. Name:Malia Obama /Obama/ | Birth Day:02 May 1998
+2. Name:John Obama /Obama/ | Birth Day:02 May 2002
+3. Name:Adam Obama /Obama/ | Birth Day:02 May 1991
+4. Name:Hend Obama /Obama/ | Birth Day:02 May 2003
+5. Name:Adam Obama /Obama/ | Birth Day:02 May 1989
+6. Name:James Obama /Obama/ | Birth Day:02 May 1990
+7. Name:Martha Obama /Obama/ | Birth Day:02 May 2010
+8. Name:Caroline Obama /Obama/ | Birth Day:02 May 2006
+9. Name:David Oba /Oba/ | Birth Day:02 May 2005
+10. Name:Julia Obama /Obama/ | Birth Day:02 May 2000
+11. Name:Alexander Obama /Obama/ | Birth Day:02 May 2012
 ------------------------------------------------------------------------------------
 
 ************(--Ordered Sibling list will be printed for each family--)************
@@ -204,50 +182,6 @@ Cersei /Lannister/ with id 19 is 0  years old
  
 *--------The Children in the family ID:  @F10@  are listed below according to there age:
 
-<<<<<<< HEAD
-Adam /Obama/ with id 30 is 27  years old
-James /Obama/ with id 31 is 26  years old
-Adam /Obama/ with id 29 is 25  years old
-Sarah /Obama/ with id 32 is 24  years old
-Malia /Obama/ with id 24 is 18  years old
-Julia /Obama/ with id 38 is 16  years old
-Natasha /Obama/ with id 25 is 15  years old
-John /Obama/ with id 26 is 14  years old
-Hend /Obama/ with id 28 is 13  years old
-David /Oba/ with id 37 is 11  years old
-Caroline /Obama/ with id 36 is 10  years old
-Martha /Obama/ with id 33 is 6  years old
-Alexander /Oba/ with id 39 is 4  years old
-Nawal /Obama/ with id 27 is 0  years old
-Marry /Obama/ with id 34 is 0  years old
-Henry /Obama/ with id 35 is 0  years old
-*--------The Children in the family ID:  @F9@  are listed below according to there age:
-
-Joffrey /Baratheon/ with id 40 is 0  years old
----------------------------------------------------------------------------------------
-------List all recent births that occur during the last 30 days:------
-1. Name:Cersei /Lannister/ | Birth Day:22 Mar 2016
-2. Name:Nawal /Obama/ | Birth Day:06 Apr 2016
-3. Name:Marry /Obama/ | Birth Day:25 Mar 2016
-4. Name:Henry /Obama/ | Birth Day:28 Mar 2016
----------------------------------------------------------------------------------------
-------List all recent death cases that occur during the last 30 days:------
-----------------List All Orphans-------------------
-12 Cases Founded:
-Case 1: Child's Name:Malia /Obama/| Child's ID:24
-Case 2: Child's Name:Natasha /Obama/| Child's ID:25
-Case 3: Child's Name:John /Obama/| Child's ID:26
-Case 4: Child's Name:Nawal /Obama/| Child's ID:27
-Case 5: Child's Name:Hend /Obama/| Child's ID:28
-Case 6: Child's Name:Martha /Obama/| Child's ID:33
-Case 7: Child's Name:Marry /Obama/| Child's ID:34
-Case 8: Child's Name:Henry /Obama/| Child's ID:35
-Case 9: Child's Name:Caroline /Obama/| Child's ID:36
-Case 10: Child's Name:David /Oba/| Child's ID:37
-Case 11: Child's Name:Julia /Obama/| Child's ID:38
-Case 12: Child's Name:Alexander /Oba/| Child's ID:39
-
-=======
 Adam Obama /Obama/ with id 30 is 27  years old
 James Obama /Obama/ with id 31 is 26  years old
 Adam Obama /Obama/ with id 28 is 25  years old
@@ -295,19 +229,30 @@ Joffrey /Lannister/ with id 47 is 14  years old
 ------List all recent death cases that occur during the last 30 days:------
 1. Name:Alex /Smith/ | Death Day:24 Mar 2016
 2. Name:Sally /Lyman/ | Death Day:15 Apr 2016
->>>>>>> origin/master
+----------------List All Orphans-------------------
+12 Cases Founded:
+Case 1: Child's Name:Malia Obama /Obama/| Child's ID:24
+Case 2: Child's Name:Natasha Obama /Obama/| Child's ID:25
+Case 3: Child's Name:John Obama /Obama/| Child's ID:26
+Case 4: Child's Name:Nawal Obama /Obama/| Child's ID:27
+Case 5: Child's Name:Hend Obama /Obama/| Child's ID:29
+Case 6: Child's Name:Martha Obama /Obama/| Child's ID:33
+Case 7: Child's Name:Marry Obama /Obama/| Child's ID:34
+Case 8: Child's Name:Henry Obama /Obama/| Child's ID:35
+Case 9: Child's Name:Caroline Obama /Obama/| Child's ID:36
+Case 10: Child's Name:David Oba /Oba/| Child's ID:37
+Case 11: Child's Name:Julia Obama /Obama/| Child's ID:38
+Case 12: Child's Name:Alexander Obama /Obama/| Child's ID:39
+
 ---------------------------------------------------------------------------------------------
 ------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------
 ------US02 Check that birth should occur before marriage:------
 Name:Cersei /Lannister/ is born after marriage! Birth: 22 Mar 2016 Marriage: 01 Jan 2016
-<<<<<<< HEAD
-Name:Adam /Obama/ is born after marriage! Birth: 02 May 1991 Marriage: 01 Jan 1990
-Name:Nawal /Obama/ is born after marriage! Birth: 06 Apr 2016 Marriage: 01 Jan 1990
-=======
 Name:Adam Obama /Obama/ is born after marriage! Birth: 02 May 1991 Marriage: 01 Jan 1990
 Name:Nawal Obama /Obama/ is born after marriage! Birth: 06 Apr 2016 Marriage: 01 Jan 1990
->>>>>>> origin/master
 ------US03 Check that death doesn't happen before birth:------
+ErrorUS03 : Check to make sure person is not dead before birth
+Name:Tyrion /Lannister/ died before their birth! Birth: 02 Jan 2005 Death: 02 Jan 2000
 ------Check if there's a divorce before marriage:------
 2  Divorce(s) before marriage(s) found:
 Case 1
@@ -317,6 +262,7 @@ Case 2
 Husband:Kyle /Jhonson/ | Wife:Alice /Jones/
 Marriage Date:10 Mar 2000 | Divorce Date:01 Jan 2000
 ------US05 Check that marriage should occur before death:------
+ErrorUS09 : Name:Tyrion /Lannister/ is married after death! Death date: 02 Jan 2000 Marriage: 01 Jan 2015
 ErrorUS05 : Name:Joanna /Lannister/ is married after death! Death date: 01 Jan 2005 Marriage: 10 May 2006
 -----------Check Age Limit for Individual Here:-----------
 DOB is 01 Apr 1500
@@ -327,34 +273,34 @@ ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Ty
 ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Cersei /Lannister/ birth: 22 Mar 2016
 ErrorUS09 : Mother's Name: Joanna /Lannister/ died: 01 Jan 2005 Child's Name: Jamie /Lannister/ birth: 23 Mar 2015
 ErrorUS09 : Father's Name: Robert /Baratheon/ died: 09 Jun 2016 Child's Name: Joffrey /Baratheon/ birth: 01 Mar 2016
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Malia /Obama/ birth: 02 May 1998
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Natasha /Obama/ birth: 02 May 2001
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: John /Obama/ birth: 02 May 2002
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Nawal /Obama/ birth: 06 Apr 2016
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Hend /Obama/ birth: 02 May 2003
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Adam /Obama/ birth: 02 May 1991
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: James /Obama/ birth: 02 May 1990
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Sarah /Obama/ birth: 06 Apr 1992
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Martha /Obama/ birth: 02 May 2010
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Marry /Obama/ birth: 25 Mar 2016
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Henry /Obama/ birth: 28 Mar 2016
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Caroline /Obama/ birth: 02 May 2006
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: David /Oba/ birth: 02 May 2005
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Julia /Obama/ birth: 02 May 2000
-ErrorUS09 : Father's Name: barack /Obama/ died: 06 Jun 1990 Child's Name: Alexander /Oba/ birth: 02 May 2012
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Malia /Obama/ birth: 02 May 1998
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Natasha /Obama/ birth: 02 May 2001
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: John /Obama/ birth: 02 May 2002
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Nawal /Obama/ birth: 06 Apr 2016
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Hend /Obama/ birth: 02 May 2003
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Sarah /Obama/ birth: 06 Apr 1992
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Martha /Obama/ birth: 02 May 2010
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Marry /Obama/ birth: 25 Mar 2016
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Henry /Obama/ birth: 28 Mar 2016
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Caroline /Obama/ birth: 02 May 2006
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: David /Oba/ birth: 02 May 2005
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Julia /Obama/ birth: 02 May 2000
-ErrorUS09 : Mother's Name: Michelle /Obama/ died: 06 Jun 1991 Child's Name: Alexander /Oba/ birth: 02 May 2012
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Malia Obama /Obama/ birth: 02 May 1998
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Natasha Obama /Obama/ birth: 26 Mar 2001
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: John Obama /Obama/ birth: 02 May 2002
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Nawal Obama /Obama/ birth: 06 Apr 2016
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Adam Obama /Obama/ birth: 02 May 1991
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Hend Obama /Obama/ birth: 02 May 2003
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: James Obama /Obama/ birth: 02 May 1990
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Sarah Obama /Obama/ birth: 06 Apr 1992
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Martha Obama /Obama/ birth: 02 May 2010
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Marry Obama /Obama/ birth: 25 Mar 2016
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Henry Obama /Obama/ birth: 28 Mar 2016
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Caroline Obama /Obama/ birth: 02 May 2006
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: David Oba /Oba/ birth: 02 May 2005
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Julia Obama /Obama/ birth: 02 May 2000
+ErrorUS09 : Father's Name: barack Obama /Obama/ died: 06 Jun 1990 Child's Name: Alexander Obama /Obama/ birth: 02 May 2012
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Malia Obama /Obama/ birth: 02 May 1998
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Natasha Obama /Obama/ birth: 26 Mar 2001
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: John Obama /Obama/ birth: 02 May 2002
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Nawal Obama /Obama/ birth: 06 Apr 2016
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Hend Obama /Obama/ birth: 02 May 2003
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Sarah Obama /Obama/ birth: 06 Apr 1992
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Martha Obama /Obama/ birth: 02 May 2010
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Marry Obama /Obama/ birth: 25 Mar 2016
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Henry Obama /Obama/ birth: 28 Mar 2016
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Caroline Obama /Obama/ birth: 02 May 2006
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: David Oba /Oba/ birth: 02 May 2005
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Julia Obama /Obama/ birth: 02 May 2000
+ErrorUS09 : Mother's Name: Michelle Obama /Obama/ died: 06 Jun 1991 Child's Name: Alexander Obama /Obama/ birth: 02 May 2012
 
 ------US10 Check Marriage is after 14 years old:------
 ErrorUS10 : This individual is less than 14 years old and married
@@ -362,9 +308,6 @@ Name:Tyrion /Lannister/ Birth: 02 Jan 2005
 ErrorUS10 : This individual is less than 14 years old and married
 Name:Cersei /Lannister/ Birth: 22 Mar 2016
 ErrorUS10 : This individual is less than 14 years old and married
-<<<<<<< HEAD
-Name:Nawal /Obama/ Birth: 06 Apr 2016
-=======
 Name:Nawal Obama /Obama/ Birth: 06 Apr 2016
 ------US11 Check that no more than one marriage occurs at the same time:------
 Ruby /Williams/is in multiple marriages with Ethan /Smith/
@@ -373,7 +316,6 @@ Tommen /Lannister/is in multiple marriages with Margaery /Tyrell/
 Tommen /Lannister/is in multiple marriages with Sansa /Stark/
 ------US14 Check that no more than 5 children born at once:------
 Husband: Tommen /Lannister/and Wife: Margaery /Tyrell/have 6 children with same birthdates
->>>>>>> origin/master
 ----US 12Check the difference in age between parents and childeren :----
 33 Cases(s) Founded:
 
@@ -391,15 +333,9 @@ Case 6: Father is 103 older than his child| Father's Name:barack Obama /Obama/| 
 
 Case 7: Mother is 102 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:John Obama /Obama/ | Child's ID:@I26@
 
-<<<<<<< HEAD
-Case 8: Father is 116 older than his child| Father's Name:barack /Obama/| Father's ID:22 || Child's Name:Nawal /Obama/ | Child's ID:@I27@
-
-Case 9: Mother is 115 older than her child| Motehr's Name:Michelle /Obama/| Mother's ID:23 || Child's Name:Nawal /Obama/ | Child's ID:@I27@
-=======
 Case 8: Father is 116 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
 
 Case 9: Mother is 115 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Nawal Obama /Obama/ | Child's ID:@I27@
->>>>>>> origin/master
 
 Case 10: Father is 92 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Adam Obama /Obama/ | Child's ID:@I28@
 
@@ -417,29 +353,14 @@ Case 16: Father is 91 older than his child| Father's Name:barack Obama /Obama/| 
 
 Case 17: Mother is 90 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:James Obama /Obama/ | Child's ID:@I31@
 
-<<<<<<< HEAD
-Case 18: Father is 92 older than his child| Father's Name:barack /Obama/| Father's ID:22 || Child's Name:Sarah /Obama/ | Child's ID:@I32@
-
-Case 19: Mother is 91 older than her child| Motehr's Name:Michelle /Obama/| Mother's ID:23 || Child's Name:Sarah /Obama/ | Child's ID:@I32@
-=======
 Case 18: Father is 92 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
 
 Case 19: Mother is 91 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Sarah Obama /Obama/ | Child's ID:@I32@
->>>>>>> origin/master
 
 Case 20: Father is 111 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
 
 Case 21: Mother is 110 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Martha Obama /Obama/ | Child's ID:@I33@
 
-<<<<<<< HEAD
-Case 22: Father is 116 older than his child| Father's Name:barack /Obama/| Father's ID:22 || Child's Name:Marry /Obama/ | Child's ID:@I34@
-
-Case 23: Mother is 115 older than her child| Motehr's Name:Michelle /Obama/| Mother's ID:23 || Child's Name:Marry /Obama/ | Child's ID:@I34@
-
-Case 24: Father is 116 older than his child| Father's Name:barack /Obama/| Father's ID:22 || Child's Name:Henry /Obama/ | Child's ID:@I35@
-
-Case 25: Mother is 115 older than her child| Motehr's Name:Michelle /Obama/| Mother's ID:23 || Child's Name:Henry /Obama/ | Child's ID:@I35@
-=======
 Case 22: Father is 116 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
 
 Case 23: Mother is 115 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Marry Obama /Obama/ | Child's ID:@I34@
@@ -447,7 +368,6 @@ Case 23: Mother is 115 older than her child| Mother's Name:Michelle Obama /Obama
 Case 24: Father is 116 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
 
 Case 25: Mother is 115 older than her child| Mother's Name:Michelle Obama /Obama/| Mother's ID:23 || Child's Name:Henry Obama /Obama/ | Child's ID:@I35@
->>>>>>> origin/master
 
 Case 26: Father is 107 older than his child| Father's Name:barack Obama /Obama/| Father's ID:22 || Child's Name:Caroline Obama /Obama/ | Child's ID:@I36@
 

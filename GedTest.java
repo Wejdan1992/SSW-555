@@ -30,14 +30,11 @@ public class GedTest {
 			US30ListMarried();
 			US38ListUpcomingBirthdays();
 			OrderedSiblingList();
-<<<<<<< HEAD
+
 			 ListRecentBirth();
                           ListRecentDeath();
                           ListOrphans();
-=======
-			ListRecentBirth();
-            ListRecentDeath();
->>>>>>> origin/master
+
 
 			// Checks below
 			US01DateAfterCurrent();
