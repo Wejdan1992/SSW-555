@@ -30,9 +30,14 @@ public class GedTest {
 			US30ListMarried();
 			US38ListUpcomingBirthdays();
 			OrderedSiblingList();
+<<<<<<< HEAD
 			 ListRecentBirth();
                           ListRecentDeath();
                           ListOrphans();
+=======
+			ListRecentBirth();
+            ListRecentDeath();
+>>>>>>> origin/master
 
 			// Checks below
 			US01DateAfterCurrent();
@@ -43,6 +48,8 @@ public class GedTest {
 			US07CheckAgeLimit();
 			US09BirthBeforeParentsDeath();
 			US10Marriage();
+			US11NoBigamy();
+			US14LessThan5BirthsAtOnce();
 			US12parentsNotTooOld();
 			US15fewerThan15Siblings();
 			CheckHusbandMale();
@@ -336,6 +343,50 @@ out.print(result.toString());
 		out.println(result.toString());
 	} // -End US09BirthBeforeParentsDeath
 	
+	// US11 No Bigamy
+	// Marriage should not occur during marriage to another spouse
+	// owner: Philip
+	public static void US11NoBigamy() {
+		out.println("------US11 Check that no more than one marriage occurs at the same time:------");
+		for (FamilyRecord temp : handler.famRecords) {
+			if (handler.getIndiById(temp.husbandId).fams.size() > 1 
+					&& temp.marriageDate2 != null && temp.divorceDate2 == null) {//husband
+				out.println(handler.getIndiById(temp.husbandId).name + "is in multiple marriages with " + handler.getIndiById(temp.wifeId).name );
+			}
+			if (handler.getIndiById(temp.wifeId).fams.size() > 1 
+					&& temp.marriageDate2 != null && temp.divorceDate2 == null) {//wife
+				out.println(handler.getIndiById(temp.wifeId).name + "is in multiple marriages with " + handler.getIndiById(temp.husbandId).name );
+			}
+		}
+	} // -End US11NoBigamy
+	
+	// US14 LessThan5BirthsAtOnce
+	// No more than five siblings should be born at the same time
+	// owner: Philip
+	public static void US14LessThan5BirthsAtOnce() {
+		out.println("------US14 Check that no more than 5 children born at once:------");
+		for (FamilyRecord temp : handler.famRecords) {
+			if (temp.childerenList.size() > 5) {
+				for(int i = 0; i < temp.childerenList.size(); i++){
+					IndividualRecord child = handler.getIndiByIdString(temp.childerenList.get(i));
+					Date checkDate = child.birthDate2;
+					int count = 1;
+					for(int j = 0; j < temp.childerenList.size(); j++){
+						IndividualRecord compareChild = handler.getIndiByIdString(temp.childerenList.get(j));
+						if(i != j && compareChild.birthDate2.compareTo(checkDate) == 0){
+							count++;
+						}
+					}
+					if(count > 5 && i + 1 == temp.childerenList.size()){ //
+						out.println("Husband: " + handler.getIndiById(temp.husbandId).name 
+									+ "and Wife: " + handler.getIndiById(temp.wifeId).name
+							+ "have " + count + " children with same birthdates");
+					}
+				}
+			}
+		}
+	} // -End US14LessThan5BirthsAtOnce
+	
 	// US04
 	// owner: Fawaz
 	public static void US04DivorceBeforeMarriage() {
@@ -436,7 +487,7 @@ out.print(result.toString());
 						if ((wifeAge - childAge) >= 60) {
 							count++;
 							result.append("Case " + count + ": Mother is " + (wifeAge - childAge)
-								+ " older than her child" + "| Motehr's Name:"
+								+ " older than her child" + "| Mother's Name:"
 								+ handler.getIndiById(temp.wifeId).name + "| Mother's ID:" + temp.wifeId
 								+ " || Child's Name:" + handler.getIndiByIdString(childId).name + " | Child's ID:"
 								+ childId + System.lineSeparator() + System.lineSeparator());
