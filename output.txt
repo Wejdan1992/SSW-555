@@ -244,6 +244,11 @@ Case 10: Child's Name:David Oba /Oba/| Child's ID:37
 Case 11: Child's Name:Julia Obama /Obama/| Child's ID:38
 Case 12: Child's Name:Alexander Obama /Obama/| Child's ID:39
 
+----------------List Anniversaries-------------------
+2 Cases Founded:
+Case 1: Family ID:1| Marriage Date:04 May 1990
+Case 2: Family ID:2| Marriage Date:05 May 1992
+
 ---------------------------------------------------------------------------------------------
 ------US01 Check that Dates (birth, marriage, divorce, death) should not be after the current date:------
 ------US02 Check that birth should occur before marriage:------

@@ -30,12 +30,10 @@ public class GedTest {
 			US30ListMarried();
 			US38ListUpcomingBirthdays();
 			OrderedSiblingList();
-
-			 ListRecentBirth();
-                          ListRecentDeath();
-                          ListOrphans();
-
-
+			ListRecentBirth();
+			ListRecentDeath();
+			ListOrphans();
+			ListAnniversaries();
 			// Checks below
 			US01DateAfterCurrent();
 			US02BirthBeforeMarriage();
@@ -349,12 +347,12 @@ out.print(result.toString());
 			if (handler.getIndiById(temp.husbandId).fams.size() > 1 
 					&& temp.marriageDate2 != null && temp.divorceDate2 == null) {//husband
 				out.println(handler.getIndiById(temp.husbandId).name + "is in multiple marriages with " + handler.getIndiById(temp.wifeId).name );
-			}
-			if (handler.getIndiById(temp.wifeId).fams.size() > 1 
-					&& temp.marriageDate2 != null && temp.divorceDate2 == null) {//wife
-				out.println(handler.getIndiById(temp.wifeId).name + "is in multiple marriages with " + handler.getIndiById(temp.husbandId).name );
-			}
 		}
+		if (handler.getIndiById(temp.wifeId).fams.size() > 1 
+					&& temp.marriageDate2 != null && temp.divorceDate2 == null) {//wife
+			out.println(handler.getIndiById(temp.wifeId).name + "is in multiple marriages with " + handler.getIndiById(temp.husbandId).name );
+	}
+}
 	} // -End US11NoBigamy
 	
 	// US14 LessThan5BirthsAtOnce
@@ -376,7 +374,7 @@ out.print(result.toString());
 					}
 					if(count > 5 && i + 1 == temp.childerenList.size()){ //
 						out.println("Husband: " + handler.getIndiById(temp.husbandId).name 
-									+ "and Wife: " + handler.getIndiById(temp.wifeId).name
+							+ "and Wife: " + handler.getIndiById(temp.wifeId).name
 							+ "have " + count + " children with same birthdates");
 					}
 				}
@@ -717,78 +715,78 @@ out.print(result.toString());
 	}// //OrderedSiblingList ends here
 	
 	
-	    
-    public static void ListRecentBirth() {
-        out.println("---------------------------------------------------------------------------------------");
-        out.println("------List all recent births that occur during the last 30 days:------");
-        Calendar today = Calendar.getInstance();
-        int today_Month = today.get(Calendar.MONTH);
-        int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
-        int today_Year =today.get(Calendar.YEAR);
-        int count = 1;
-        for (IndividualRecord temp : handler.indiRecords) {
-            
-            if (temp.deathDate2 == null && temp.birthDate2 != null) {
-                Calendar birthDay = Calendar.getInstance();
-                birthDay.setTime(temp.birthDate2);
-                int bd_Month = birthDay.get(Calendar.MONTH);
-                int bd_dayOfMonth = birthDay.get(Calendar.DAY_OF_MONTH);
-                int bd_Year=birthDay.get(Calendar.YEAR);
-                if (today_Year==bd_Year && today_Month == bd_Month && today_dayOfMonth >= bd_dayOfMonth)
-                {
-                    out.println(
-                                count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
-                    count++;
-                    
-                } else if (today_Year==bd_Year&&today_Month - bd_Month == 1 && today_dayOfMonth <= bd_dayOfMonth ) {
-                    out.println(count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
-                    count++;
-                }
-            }
-        }
-    }
-    
-    
-    public static void ListRecentDeath() {
-        out.println("---------------------------------------------------------------------------------------");
-        out.println("------List all recent death cases that occur during the last 30 days:------");
-        Calendar today = Calendar.getInstance();
-        int today_Month = today.get(Calendar.MONTH);
-        int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
-        int today_Year =today.get(Calendar.YEAR);
-        int count = 1;
-        for (IndividualRecord temp : handler.indiRecords) {
-            
-            if (temp.deathDate2 != null) {
-                Calendar deathDate = Calendar.getInstance();
-                deathDate.setTime(temp.deathDate2);
-                int death_Month = deathDate.get(Calendar.MONTH);
-                int death_dayOfMonth = deathDate.get(Calendar.DAY_OF_MONTH);
-                int death_Year=deathDate.get(Calendar.YEAR);
-                if (today_Year== death_Year && today_Month == death_Month && today_dayOfMonth >=  death_dayOfMonth)
-                {
-                    out.println(
-                                count + ". Name:" + temp.name + " | Death Day:" + dateFormat.format(temp.deathDate2));
-                    count++;
-                    
-                } else if (today_Year==death_Year&&today_Month - death_Month == 1 && today_dayOfMonth <= death_dayOfMonth ) {
-                    out.println(count + ". Name:" + temp.name + " | Death Day:" + dateFormat.format(temp.deathDate2));
-                    count++;
-                }
-            }
-        }
-    }
+
+	public static void ListRecentBirth() {
+		out.println("---------------------------------------------------------------------------------------");
+		out.println("------List all recent births that occur during the last 30 days:------");
+		Calendar today = Calendar.getInstance();
+		int today_Month = today.get(Calendar.MONTH);
+		int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
+		int today_Year =today.get(Calendar.YEAR);
+		int count = 1;
+		for (IndividualRecord temp : handler.indiRecords) {
+
+			if (temp.deathDate2 == null && temp.birthDate2 != null) {
+				Calendar birthDay = Calendar.getInstance();
+				birthDay.setTime(temp.birthDate2);
+				int bd_Month = birthDay.get(Calendar.MONTH);
+				int bd_dayOfMonth = birthDay.get(Calendar.DAY_OF_MONTH);
+				int bd_Year=birthDay.get(Calendar.YEAR);
+				if (today_Year==bd_Year && today_Month == bd_Month && today_dayOfMonth >= bd_dayOfMonth)
+				{
+					out.println(
+						count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
+					count++;
+
+				} else if (today_Year==bd_Year&&today_Month - bd_Month == 1 && today_dayOfMonth <= bd_dayOfMonth ) {
+					out.println(count + ". Name:" + temp.name + " | Birth Day:" + dateFormat.format(temp.birthDate2));
+					count++;
+				}
+			}
+		}
+	}
+
+
+	public static void ListRecentDeath() {
+		out.println("---------------------------------------------------------------------------------------");
+		out.println("------List all recent death cases that occur during the last 30 days:------");
+		Calendar today = Calendar.getInstance();
+		int today_Month = today.get(Calendar.MONTH);
+		int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
+		int today_Year =today.get(Calendar.YEAR);
+		int count = 1;
+		for (IndividualRecord temp : handler.indiRecords) {
+
+			if (temp.deathDate2 != null) {
+				Calendar deathDate = Calendar.getInstance();
+				deathDate.setTime(temp.deathDate2);
+				int death_Month = deathDate.get(Calendar.MONTH);
+				int death_dayOfMonth = deathDate.get(Calendar.DAY_OF_MONTH);
+				int death_Year=deathDate.get(Calendar.YEAR);
+				if (today_Year== death_Year && today_Month == death_Month && today_dayOfMonth >=  death_dayOfMonth)
+				{
+					out.println(
+						count + ". Name:" + temp.name + " | Death Day:" + dateFormat.format(temp.deathDate2));
+					count++;
+
+				} else if (today_Year==death_Year&&today_Month - death_Month == 1 && today_dayOfMonth <= death_dayOfMonth ) {
+					out.println(count + ". Name:" + temp.name + " | Death Day:" + dateFormat.format(temp.deathDate2));
+					count++;
+				}
+			}
+		}
+	}
     //owner:Fawaz
     //US33
-    public static void ListOrphans()
-    {
-    	out.println("----------------List All Orphans-------------------");
-    	StringBuilder result=new StringBuilder();
-    	int count=0;
-    	for(FamilyRecord temp:handler.famRecords)
-    	{
-    		IndividualRecord father = handler.getIndiById(temp.husbandId);
-    		IndividualRecord mother = handler.getIndiById(temp.wifeId);
+	public static void ListOrphans()
+	{
+		out.println("----------------List All Orphans-------------------");
+		StringBuilder result=new StringBuilder();
+		int count=0;
+		for(FamilyRecord temp:handler.famRecords)
+		{
+			IndividualRecord father = handler.getIndiById(temp.husbandId);
+			IndividualRecord mother = handler.getIndiById(temp.wifeId);
     		if(father.deathDate2!=null&&mother.deathDate2!=null)//both parents are dead
     		{
     			for(String childId:temp.childerenList)
@@ -807,26 +805,66 @@ out.print(result.toString());
     	out.println(count+" Cases Founded:");
     	out.println(result.toString());
     }
+    //owner:Fawaz
+    //US39
+    public static void ListAnniversaries()
+    {
+    	out.println("----------------List Anniversaries-------------------");
+    	StringBuilder result=new StringBuilder();
+    	int count=0;
+    	for(FamilyRecord temp:handler.famRecords)
+    	{
+    		IndividualRecord husband = handler.getIndiById(temp.husbandId);
+    		IndividualRecord wife = handler.getIndiById(temp.wifeId);
+    		Calendar today = Calendar.getInstance();
+    		int today_Month = today.get(Calendar.MONTH);
+    		int today_dayOfMonth = today.get(Calendar.DAY_OF_MONTH);
+    		if(husband.deathDate2==null&&wife.deathDate2==null)//Check if both husband and wife are alive
+    		{
+    			if(temp.marriageDate2!=null)//check if the marriage dats is known
+    			{
+    				Calendar anniversary = Calendar.getInstance();
+    				anniversary.setTime(temp.marriageDate2);
+    				int an_Month = anniversary.get(Calendar.MONTH);
+    				int an_dayOfMonth = anniversary.get(Calendar.DAY_OF_MONTH);
+    				if (today_Month == an_Month && today_dayOfMonth <= an_dayOfMonth) 
+    				{
+    					count++;
+    					result.append("Case "+count+": Family ID:"+temp.familyId+"| Marriage Date:"+dateFormat.format(temp.marriageDate2)+System.lineSeparator());
+    				}
+    				else if (an_Month - today_Month == 1 && an_dayOfMonth <= today_dayOfMonth) 
+    				{
+    					count++;
+    					result.append("Case "+count+": Family ID:"+temp.familyId+"| Marriage Date:"+dateFormat.format(temp.marriageDate2)+System.lineSeparator());
+    				}
+    			} 
+    		}
+    	}
+    	out.println(count+" Cases Founded:");
+    	out.println(result.toString());
+    }
+    
+    
 
 
 	// ------------------End of Test Cases--------------//
 	// -------------------------------------------------//
 
 	// Helper methods
-	private static int compare(Date d1, Date d2) {
-		Calendar date1 = Calendar.getInstance();
-		date1.setTime(d1);
-		Calendar date2 = Calendar.getInstance();
-		date2.setTime(d2);
-		int diff = date1.get(Calendar.YEAR) - date2.get(Calendar.YEAR);
-		if (date1.get(Calendar.MONTH) < date2.get(Calendar.MONTH)) {
-			diff--;
-		} else if (date1.get(Calendar.MONTH) == date2.get(Calendar.MONTH)) {
-			if (date1.get(Calendar.DAY_OF_MONTH) < date2.get(Calendar.DAY_OF_MONTH)) {
-				diff--;
-			}
-		}
-		return diff;
-	}
+    private static int compare(Date d1, Date d2) {
+    	Calendar date1 = Calendar.getInstance();
+    	date1.setTime(d1);
+    	Calendar date2 = Calendar.getInstance();
+    	date2.setTime(d2);
+    	int diff = date1.get(Calendar.YEAR) - date2.get(Calendar.YEAR);
+    	if (date1.get(Calendar.MONTH) < date2.get(Calendar.MONTH)) {
+    		diff--;
+    	} else if (date1.get(Calendar.MONTH) == date2.get(Calendar.MONTH)) {
+    		if (date1.get(Calendar.DAY_OF_MONTH) < date2.get(Calendar.DAY_OF_MONTH)) {
+    			diff--;
+    		}
+    	}
+    	return diff;
+    }
 
 }// public class GedTest ends here
